@@ -42,9 +42,9 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 	    - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
     - Aguardar a conclusão da instalação.
 
-![Ecrã de instalação do Drupal CMS](images/install.jpg)
+![Ecrã de instalação do Drupal CMS](images/install.jpg){width=60%}
 
-![Instalação do Drupal CMS a decorrer.](images/install-running.jpg)
+![Instalação do Drupal CMS a decorrer.](images/install-running.jpg){width=60%}
 ## Adicionar Funcionalidades com Receitas (Add-ons)
 
 1. **Explorar o Dashboard**:
@@ -59,11 +59,11 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 3. **Visualizar Novos Conteúdos**:
     - No Dashboard explorar as novas listagens e entradas de conteúdo: blogs, notícias, eventos e formulário de contacto.
 
-![Dashboard do Drupal CMS](images/dashboard-install-add-ons.jpg)
+![Dashboard do Drupal CMS](images/dashboard-install-add-ons.jpg){width=60%}
 
-![Instalação de add-ons](images/recipes-install.jpg)
+![Instalação de add-ons](images/recipes-install.jpg){width=60%}
 
-![Visão geral do conteúdo recente no Dashboard do Drupal CMS](images/dashboard-recent-content.jpg)
+![Visão geral do conteúdo recente no Dashboard do Drupal CMS](images/dashboard-recent-content.jpg){width=60%}
 ## Criar Conteúdo
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
@@ -81,13 +81,13 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 - Modificar o URL do conteúdo.
 - Alterar o autor e a data de publicação."
 
-![Link para a página de notícias via Dashboard do Drupal CMS](images/dashboard-news-page.jpg)
+![Link para a página de notícias via Dashboard do Drupal CMS](images/dashboard-news-page.jpg){width=60%}
 
-![Link para adicionar notícias na listagem](images/news-overview-new-content.jpg)
+![Link para adicionar notícias na listagem](images/news-overview-new-content.jpg){width=60%}
 
-![Criar nova notícia como rascunho](images/new-draft-news.jpg)
+![Criar nova notícia como rascunho](images/new-draft-news.jpg){width=60%}
 
-![Publicar uma noticia](images/new-published-news.jpg)
+![Publicar uma noticia](images/new-published-news.jpg){width=60%}
 ## Gerir Revisões de Conteúdo
 
 1. **Aceder à Lista de Conteúdo**:
@@ -98,11 +98,11 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 3. **Restaurar Revisões Anteriores**:
     - Explorar a opção de restaurar versões anteriores do conteúdo.
 
-![Lista completa de conteúdo](images/content-overview-news.jpg)
+![Lista completa de conteúdo](images/content-overview-news.jpg){width=60%}
 
-![Link para revisões do conteúdo](images/new-published-news-revision-tab.jpg)
+![Link para revisões do conteúdo](images/new-published-news-revision-tab.jpg){width=60%}
 
-![Reverter revisão](images/new-published-news-revision-revert.jpg)
+![Reverter revisão](images/new-published-news-revision-revert.jpg){width=60%}
 ## Gerir Módulos
 
 Antes de ativar um módulo, é necessário descarregá-lo.
@@ -115,16 +115,16 @@ Por defeito, o Drupal CMS já inclui alguns módulos disponíveis. Alguns estão
 - Observar os módulos disponíveis, ativados e não ativados.
 - Ativar os módulos "Language" e "Interface translation".
 
-![Ativar módulos disponíveis no Drupal CMS](images/extend-enable-modules.jpg)
+![Ativar módulos disponíveis no Drupal CMS](images/extend-enable-modules.jpg){width=60%}
 ### Instalar - Listar, descarregar e ativar novos módulos.
   
   **Explorar a Lista de Módulos**:
 - Navegar para *Browse modules*.
 - Observar e Explorar os módulos disponíveis, como "Admin toolbar".
 
-![Pesquisar, encontrar e ativar novos módulos, incluindo o Admin Toolbar no Drupal](images/download-install-admin-toolbar.jpg)
+![Pesquisar, encontrar e ativar novos módulos, incluindo o Admin Toolbar no Drupal](images/download-install-admin-toolbar.jpg){width=60%}
 
-![Instalação da Admin Toolbar concluída](images/install-admin-toolbar-completed.jpg)
+![Instalação da Admin Toolbar concluída](images/install-admin-toolbar-completed.jpg){width=60%}
 ### Traduzir o Website para Português
 
 O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página de administração com apenas algumas teclas.
@@ -149,33 +149,33 @@ O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página 
     - Mudar o idioma do site para português.
     - Traduzir a página inicial e outros conteúdos relevantes e ver o resultado.
 
-![Usar o módulo Coffee para encontrar rapidamente as configurações de idioma no Drupal.](images/coffee-languages-settings.jpg)
+![Usar o módulo Coffee para encontrar rapidamente as configurações de idioma no Drupal.](images/coffee-languages-settings.jpg){width=60%}
 
-![Selecionar novo idioma](images/languages-overview-add-new-language.jpg)
+![Selecionar novo idioma](images/languages-overview-add-new-language.jpg){width=60%}
 
-![Adicionar um novo idioma](images/add-new-language.jpg)
+![Adicionar um novo idioma](images/add-new-language.jpg){width=60%}
 
-![Mensagem de atualização de traduções](images/update-translations.jpg)
+![Mensagem de atualização de traduções](images/update-translations.jpg){width=60%}
 
-![Link para a gestão de blocos](images/structure-block-layout-link.jpg)
+![Link para a gestão de blocos](images/structure-block-layout-link.jpg){width=60%}
 
-![Vista geral de blocos](images/block-overview-add-block.jpg)
+![Vista geral de blocos](images/block-overview-add-block.jpg){width=60%}
 
-![Adicionar bloco de alteração de idioma](images/add-language-switcher-block.jpg)
+![Adicionar bloco de alteração de idioma](images/add-language-switcher-block.jpg){width=60%}
 
-![Ativar o módulo de tradução de conteúdo](images/enable-content-translation.jpg)
+![Ativar o módulo de tradução de conteúdo](images/enable-content-translation.jpg){width=60%}
 
-![Link para a configuração do modulo de tradução de conteúdo](images/configure-content-translation-link.jpg)
+![Link para a configuração do modulo de tradução de conteúdo](images/configure-content-translation-link.jpg){width=60%}
 
-![Configurar a tradução por tipo de conteúdo](images/enable-content-translation-options-content-type.jpg)
+![Configurar a tradução por tipo de conteúdo](images/enable-content-translation-options-content-type.jpg){width=60%}
 
-![Alterar o idioma da página inicial](images/homepage-select-language.jpg)
+![Alterar o idioma da página inicial](images/homepage-select-language.jpg){width=60%}
 
-![Link para a opção de traduzir a página inicial.](images/translate-homepage-tab.jpg)
+![Link para a opção de traduzir a página inicial.](images/translate-homepage-tab.jpg){width=60%}
 
-![Link para adicionar a tradução em Português](images/add-translation-operation.jpg)
+![Link para adicionar a tradução em Português](images/add-translation-operation.jpg){width=60%}
 
-![Traduzir a página inicial.](images/create-translation.jpg)
+![Traduzir a página inicial.](images/create-translation.jpg){width=60%}
 
 ### Atualizar o Website e Módulos
 
@@ -191,12 +191,12 @@ O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página 
     - Selecionar na aba a opção "Revisions"
     - Utilizar a função "Compare Revisions" para visualizar as diferenças.
 
-![Ativar o modulo diff](images/enable-diff-module.jpg)
+![Ativar o modulo diff](images/enable-diff-module.jpg){width=60%}
 
-![Drupal CMS preparado para atualizar o módulo diff](images/update-ready.jpg)
+![Drupal CMS preparado para atualizar o módulo diff](images/update-ready.jpg){width=60%}
 
-![Link para aceder á pagina de revisões do conteúdo](images/node-revisions-link.jpg)
+![Link para aceder á pagina de revisões do conteúdo](images/node-revisions-link.jpg){width=60%}
 
-![Lista de revisões do conteúdo](images/node-revisions-list.jpg)
+![Lista de revisões do conteúdo](images/node-revisions-list.jpg){width=60%}
 
-![Diferença entre as revisões](images/revisions-diff.jpg)
+![Diferença entre as revisões](images/revisions-diff.jpg){width=60%}
