@@ -39,9 +39,12 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
     - Selecionar a opção "Blog".
     - Definir o nome do website.
     - Criar um utilizador e definir uma palavra-passe segura.
-	    - O primeiro utlizador registado será o super administrador do site.
+	    - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
     - Aguardar a conclusão da instalação.
 
+![Ecrã de instalação do Drupal CMS](images/install.jpg)
+
+![Instalação do Drupal CMS a decorrer.](images/install-running.jpg)
 ## Adicionar Funcionalidades com Receitas (Add-ons)
 
 1. **Explorar o Dashboard**:
@@ -56,6 +59,11 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 3. **Visualizar Novos Conteúdos**:
     - No Dashboard explorar as novas listagens e entradas de conteúdo: blogs, notícias, eventos e formulário de contacto.
 
+![Dashboard do Drupal CMS](images/dashboard-install-add-ons.jpg)
+
+![Instalação de add-ons](images/recipes-install.jpg)
+
+![Visão geral do conteúdo recente no Dashboard do Drupal CMS](images/dashboard-recent-content.jpg)
 ## Criar Conteúdo
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
@@ -73,6 +81,13 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 - Modificar o URL do conteúdo.
 - Alterar o autor e a data de publicação."
 
+![Link para a página de notícias via Dashboard do Drupal CMS](images/dashboard-news-page.jpg)
+
+![Link para adicionar notícias na listagem](images/news-overview-new-content.jpg)
+
+![Criar nova notícia como rascunho](images/new-draft-news.jpg)
+
+![Publicar uma noticia](images/new-published-news.jpg)
 ## Gerir Revisões de Conteúdo
 
 1. **Aceder à Lista de Conteúdo**:
@@ -83,6 +98,11 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 3. **Restaurar Revisões Anteriores**:
     - Explorar a opção de restaurar versões anteriores do conteúdo.
 
+![Lista completa de conteúdo](images/content-overview-news.jpg)
+
+![Link para revisões do conteúdo](images/new-published-news-revision-tab.jpg)
+
+![Reverter revisão](images/new-published-news-revision-revert.jpg)
 ## Gerir Módulos
 
 Antes de ativar um módulo, é necessário descarregá-lo.
@@ -95,12 +115,16 @@ Por defeito, o Drupal CMS já inclui alguns módulos disponíveis. Alguns estão
 - Observar os módulos disponíveis, ativados e não ativados.
 - Ativar os módulos "Language" e "Interface translation".
 
+![Ativar módulos disponíveis no Drupal CMS](images/extend-enable-modules.jpg)
 ### Instalar - Listar, descarregar e ativar novos módulos.
   
   **Explorar a Lista de Módulos**:
 - Navegar para *Browse modules*.
 - Observar e Explorar os módulos disponíveis, como "Admin toolbar".
 
+![Pesquisar, encontrar e ativar novos módulos, incluindo o Admin Toolbar no Drupal](images/download-install-admin-toolbar.jpg)
+
+![Instalação da Admin Toolbar concluída](images/install-admin-toolbar-completed.jpg)
 ### Traduzir o Website para Português
 
 O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página de administração com apenas algumas teclas.
@@ -114,17 +138,65 @@ O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página 
 3. **Configurar o Bloco de Mudança de Idioma**:
     - Navegar para "Structure" e depois "Block layout".
     - Adicionar o bloco "Language switcher" à região desejada (ex. Content above)
-4. **Traduzir Conteúdo**:
+4. Ativar e Configurar o Módulo Content Translation:
+    - Navegar para "Extend" e depois "List".
+    - Ativar o módulo "Content translation".
+    - Navegar para "Configuration" e depois "Regional and Language" e depois "Content Language and Translation".
+    - Selecione 'Content', selecione os tipos de conteúdo, defina como 'Translatable' e ative a opção 'Show language selector'."
+5. **Traduzir Conteúdo**:
     - Aceder à página inicial.
+    - Editar e re-gravar a versao ingles (existe um bug no Drupal em que so e possivel traduzir conteudo criado antes da ativacao das traducoes quando o conteudo original e regravado)
     - Mudar o idioma do site para português.
     - Traduzir a página inicial e outros conteúdos relevantes e ver o resultado.
 
+![Usar o módulo Coffee para encontrar rapidamente as configurações de idioma no Drupal.](images/coffee-languages-settings.jpg)
+
+![Selecionar novo idioma](images/languages-overview-add-new-language.jpg)
+
+![Adicionar um novo idioma](images/add-new-language.jpg)
+
+![Mensagem de atualização de traduções](images/update-translations.jpg)
+
+![Link para a gestão de blocos](images/structure-block-layout-link.jpg)
+
+![Vista geral de blocos](images/block-overview-add-block.jpg)
+
+![Adicionar bloco de alteração de idioma](images/add-language-switcher-block.jpg)
+
+![Ativar o módulo de tradução de conteúdo](images/enable-content-translation.jpg)
+
+![Link para a configuração do modulo de tradução de conteúdo](images/configure-content-translation-link.jpg)
+
+![Configurar a tradução por tipo de conteúdo](images/enable-content-translation-options-content-type.jpg)
+
+![Alterar o idioma da página inicial](images/homepage-select-language.jpg)
+
+![Link para a opção de traduzir a página inicial.](images/translate-homepage-tab.jpg)
+
+![Link para adicionar a tradução em Português](images/add-translation-operation.jpg)
+
+![Traduzir a página inicial.](images/create-translation.jpg)
+
 ### Atualizar o Website e Módulos
 
-1. **Atualizar Módulos Desatualizados**:
+1. **Ativar o Modulo Diff**:
+    - Navegar para "Extend" e depois "List".
+    - Ativar o módulo "Diff".
+    - Este módulo está propositalmente desatualizado para demonstrar como realizar uma atualização."
+2. **Atualizar Módulos Desatualizados**:
     - Navegar para "Extend" e depois "Update extensions".
     - Atualizar o módulo "Diff" (e outros módulos desatualizados).
-2. Experimentar o novo módulo para comparar Revisões de Conteúdo**:
+3. Experimentar o novo módulo para comparar Revisões de Conteúdo**:
     - Editar um conteúdo e criar uma nova revisão.
     - Selecionar na aba a opção "Revisions"
     - Utilizar a função "Compare Revisions" para visualizar as diferenças.
+
+![Ativar o modulo diff](images/enable-diff-module.jpg)
+
+![Drupal CMS preparado para atualizar o módulo diff](images/update-ready.jpg)
+
+![Link para aceder á pagina de revisões do conteúdo](images/node-revisions-link.jpg)
+
+![Lista de revisões do conteúdo](images/node-revisions-list.jpg)
+
+![Diferença entre as revisões](images/revisions-diff.jpg)
