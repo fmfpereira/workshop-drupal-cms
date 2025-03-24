@@ -4,7 +4,7 @@ Currently for **Drupal CMS 1.1**.
 
 On this workshop we will use a VirtualBox OVA, of Kubuntu with DDEV, to install **Drupal CMS**.
 
-We will show to configure, add features, add content and use AI.
+We will show how to configure, add features, add content and use AI.
 
 Over time we expect to **update** and **improve** it.
 
