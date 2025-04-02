@@ -1,17 +1,18 @@
-## Preparar o Ambiente de Desenvolvimento Local
+
+# Preparar o Ambiente de Desenvolvimento Local
 
 1. **Instalar o VirtualBox**:
-    
+
     - Descarregar o VirtualBox a partir de: [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
     - Executar o instalador e seguir as instruções padrão.
 2. **Importar a Aplicação Virtual (OVA)**:
-    
+
     - Abrir o VirtualBox e selecionar "Importar Aplicação".
     - Navegar até o ficheiro `.ova` fornecido na pen USB e selecionar.
     - Garantir a seleção da opção "Generate new MAC addresses for all network adapters".
     - Confirmar e aguardar a importação da máquina virtual.
 3. **Iniciar a Máquina Virtual**:
-    
+
     - Selecionar a máquina virtual importada e clicar em "Iniciar".
     - Fazer login com as credenciais padrão: utilizador "ectl" e palavra-passe "ectl".
 
@@ -20,11 +21,12 @@
 O DDEV simplifica a configuração de ambientes de desenvolvimento para projetos web.
 Para este workshop, o DDEV já está pré-instalado e configurado para o projeto Drupal CMS.
 Para mais informações sobre a instalação e configuração do DDEV, consultar:
+
 - Instalação: [https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
 - Guia Rápido Drupal: [https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms)
 
-**Iniciar o Projeto DDEV**:
-    
+**Iniciar o Projeto DDEV**:  
+
 - Abrir o terminal/linha de comandos.
 - Navegar até a pasta do projeto Drupal CMS: `cd Sites/drupalcms`
 - Iniciar o DDEV: `ddev start`
@@ -39,12 +41,13 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
     - Selecionar a opção "Blog".
     - Definir o nome do website.
     - Criar um utilizador e definir uma palavra-passe segura.
-	    - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
+     	- O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
     - Aguardar a conclusão da instalação.
 
 ![Ecrã de instalação do Drupal CMS](images/install.jpg){width=60%}
 
 ![Instalação do Drupal CMS a decorrer.](images/install-running.jpg){width=60%}
+
 ## Adicionar Funcionalidades com Receitas (Add-ons)
 
 1. **Explorar o Dashboard**:
@@ -64,6 +67,7 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 ![Instalação de add-ons](images/recipes-install.jpg){width=60%}
 
 ![Visão geral do conteúdo recente no Dashboard do Drupal CMS](images/dashboard-recent-content.jpg){width=60%}
+
 ## Criar Conteúdo
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
@@ -88,6 +92,7 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ![Criar nova notícia como rascunho](images/new-draft-news.jpg){width=60%}
 
 ![Publicar uma noticia](images/new-published-news.jpg){width=60%}
+
 ## Gerir Revisões de Conteúdo
 
 1. **Aceder à Lista de Conteúdo**:
@@ -103,6 +108,7 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ![Link para revisões do conteúdo](images/new-published-news-revision-tab.jpg){width=60%}
 
 ![Reverter revisão](images/new-published-news-revision-revert.jpg){width=60%}
+
 ## Gerir Módulos
 
 Antes de ativar um módulo, é necessário descarregá-lo.
@@ -111,20 +117,24 @@ Por defeito, o Drupal CMS já inclui alguns módulos disponíveis. Alguns estão
 ### Listar e ativar modulos disponiveis
 
 **Explorar a Lista de Módulos**:
+
 - Navegar para "Extend" e depois "List".
 - Observar os módulos disponíveis, ativados e não ativados.
 - Ativar os módulos "Language" e "Interface translation".
 
 ![Ativar módulos disponíveis no Drupal CMS](images/extend-enable-modules.jpg){width=60%}
+
 ### Instalar - Listar, descarregar e ativar novos módulos.
   
   **Explorar a Lista de Módulos**:
+
 - Navegar para *Browse modules*.
 - Observar e Explorar os módulos disponíveis, como "Admin toolbar".
 
 ![Pesquisar, encontrar e ativar novos módulos, incluindo o Admin Toolbar no Drupal](images/download-install-admin-toolbar.jpg){width=60%}
 
 ![Instalação da Admin Toolbar concluída](images/install-admin-toolbar-completed.jpg){width=60%}
+
 ### Traduzir o Website para Português
 
 O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página de administração com apenas algumas teclas.
