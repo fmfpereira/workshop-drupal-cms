@@ -2,9 +2,11 @@
 *
 !composer.json
 !.ddev
-!.ddev/*
+!.ddev/**
 !.gitignore
+!patches
+!patches/**
 !web
 !web/profiles
 !web/profiles/drupal_cms_installer
-!web/profiles/drupal_cms_installer/*
+!web/profiles/drupal_cms_installer/**
