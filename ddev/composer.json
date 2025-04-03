@@ -18,7 +18,6 @@
     "require": {
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
-        "drupal/ai_audio_field": "^1.0@RC",
         "drupal/core-composer-scaffold": "^11.1.4",
         "drupal/core-project-message": "^11.1.4",
         "drupal/core-recommended": "^11.1.4",
@@ -87,12 +86,15 @@
                 "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
             ]
         },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "enable-patching": true,
         "patches": {
-            "composer-exit-on-patch-failure": true,
-            "patchLevel": {
-                "drupal/core": "-p2"
+            "drupal/admin_toolbar": {
+                "https://drupal.org/i/3506824 - Compatibility with Project Browser": "patches/drupal/admin_toolbar/admin_toolbar-compatibility-with-project-browser-3506824.patch"
             },
-            "enable-patching": true,
             "drupal/ai_audio_field": {
                 "https://drupal.org/i/3517231 - Not possible to add/manage field on layout builder or standard field ui": "patches/drupal/ai_audio_field/ai_audio_field-formatter-missing-3517231-4.patch"
             }

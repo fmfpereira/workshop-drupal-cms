@@ -1,0 +1,158 @@
+diff --git a/admin_toolbar_tools/admin_toolbar_tools.module b/admin_toolbar_tools/admin_toolbar_tools.module
+index 2107c0d5c3fb207b49f6693a4cf61a9f686e25b7..4ac3c282ba7677a4c247757229856c317b0ee692 100644
+--- a/admin_toolbar_tools/admin_toolbar_tools.module
++++ b/admin_toolbar_tools/admin_toolbar_tools.module
+@@ -97,3 +97,18 @@ function admin_toolbar_tools_entity_delete(EntityInterface $entity) {
+     }
+   }
+ }
++
++/**
++ * Implements hook_form_FORM_ID_alter().
++ */
++function admin_toolbar_tools_form_project_browser_settings_alter(&$form) {
++  // Project browser settings form: Add a submit handler to rebuild menu items.
++  $form['#submit'][] = 'admin_toolbar_tools_project_browser_settings_submit';
++}
++
++/**
++ * Project browser integration: Helper function callback to rebuild menu items.
++ */
++function admin_toolbar_tools_project_browser_settings_submit(&$form) {
++  \Drupal::service('plugin.manager.menu.link')->rebuild();
++}
+diff --git a/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php b/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
+index 8622d00e2e2cedaeb4d2af95d7bc820518c098c3..385846149d83e0e008f41a7de2201de4521336ab 100644
+--- a/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
++++ b/admin_toolbar_tools/src/Plugin/Derivative/ExtraLinks.php
+@@ -50,11 +50,11 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+   protected $themeHandler;
+
+   /**
+-   * The admin toolbar tools configuration.
++   * The configuration factory service.
+    *
+-   * @var \Drupal\Core\Config\Config
++   * @var \Drupal\Core\Config\ConfigFactoryInterface
+    */
+-  protected $config;
++  protected $configFactory;
+
+   /**
+    * The current user.
+@@ -71,7 +71,7 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+     $this->moduleHandler = $module_handler;
+     $this->routeProvider = $route_provider;
+     $this->themeHandler = $theme_handler;
+-    $this->config = $config_factory->get('admin_toolbar_tools.settings');
++    $this->configFactory = $config_factory;
+     $this->currentUser = $current_user;
+   }
+
+@@ -94,7 +94,8 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+    */
+   public function getDerivativeDefinitions($base_plugin_definition) {
+     $links = [];
+-    $max_bundle_number = $this->config->get('max_bundle_number');
++    $admin_toolbar_tools_settings = $this->configFactory->get('admin_toolbar_tools.settings');
++    $max_bundle_number = $admin_toolbar_tools_settings->get('max_bundle_number');
+     $entity_types = $this->entityTypeManager->getDefinitions();
+     $content_entities = [];
+     foreach ($entity_types as $key => $entity_type) {
+@@ -717,12 +718,29 @@ class ExtraLinks extends DeriverBase implements ContainerDeriverInterface {
+     }
+
+     if ($this->moduleHandler->moduleExists('project_browser')) {
+-      $links['project_browser.browse'] = [
+-        'title' => $this->t('Browse'),
+-        'route_name' => 'project_browser.browse',
+-        'parent' => 'system.modules_list',
+-        'weight' => -1,
+-      ] + $base_plugin_definition;
++      if ($this->routeExists('project_browser.browse')) {
++        $project_browser_admin_settings = $this->configFactory->get('project_browser.admin_settings');
++        // Get the enabled project browser sources.
++        $project_browser_enabled_sources = $project_browser_admin_settings->get('enabled_sources');
++        if (!empty($project_browser_enabled_sources)) {
++          // Build a menu link for each enabled project browser source.
++          foreach ($project_browser_enabled_sources as $key => $source_id) {
++            $links['project_browser.browse.' . $source_id] = [
++              'route_name' => 'project_browser.browse',
++              'parent' => 'system.modules_list',
++              // Menu items are ordered by the enabled sources.
++              'weight' => -10 + $key,
++              'route_parameters' => ['source' => $source_id],
++              'class' => 'Drupal\admin_toolbar_tools\Plugin\Menu\MenuLinkPlugin',
++              'metadata' => [
++                'plugin_manager' => 'Drupal\project_browser\Plugin\ProjectBrowserSourceManager',
++                'plugin_id' => $source_id,
++                'label_pattern' => $this->t('Browse @label'),
++              ],
++            ] + $base_plugin_definition;
++          }
++        }
++      }
+     }
+
+     return $links;
+diff --git a/admin_toolbar_tools/src/Plugin/Menu/MenuLinkPlugin.php b/admin_toolbar_tools/src/Plugin/Menu/MenuLinkPlugin.php
+new file mode 100644
+index 0000000000000000000000000000000000000000..35256ae83560940261322949f5f77b3261872333
+--- /dev/null
++++ b/admin_toolbar_tools/src/Plugin/Menu/MenuLinkPlugin.php
+@@ -0,0 +1,55 @@
++<?php
++
++namespace Drupal\admin_toolbar_tools\Plugin\Menu;
++
++use Drupal\Component\Render\FormattableMarkup;
++use Drupal\Core\Menu\MenuLinkDefault;
++use Symfony\Component\DependencyInjection\ContainerInterface;
++
++/**
++ * Provides a menu link plugins for configuration entities.
++ */
++class MenuLinkPlugin extends MenuLinkDefault {
++
++  /**
++   * The plugin represented in the menu link.
++   *
++   * @var array
++   */
++  protected $targetPluginDefinition;
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    $instance = parent::create($container, $configuration, $plugin_id, $plugin_definition);
++    // Inject the target plugin manager and get its definition.
++    $instance->targetPluginDefinition = $container->get($plugin_definition['metadata']['plugin_manager'])
++      ->getDefinition($plugin_definition['metadata']['plugin_id']);
++    return $instance;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getTitle() {
++    $title = $this->t('Missing');
++    if (!empty($this->targetPluginDefinition['label'])) {
++      if (!empty($this->pluginDefinition['metadata']['label_pattern'])) {
++        $title = new FormattableMarkup($this->pluginDefinition['metadata']['label_pattern'], ['@label' => $this->targetPluginDefinition['label']]);
++      }
++      else {
++        $title = $this->targetPluginDefinition['label'];
++      }
++    }
++    return $title;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getDescription() {
++    return $this->targetPluginDefinition['description'] ?: parent::getDescription();
++  }
++
++}
