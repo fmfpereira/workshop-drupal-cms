@@ -4,3 +4,5 @@
 !.ddev
 !.ddev/*
 !.gitignore
+!web/profiles/drupal_cms_installer
+!web/profiles/drupal_cms_installer/*
