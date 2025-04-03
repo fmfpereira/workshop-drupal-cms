@@ -1,0 +1,6 @@
+# Ignore all files except those required for installing Drupal
+*
+!composer.json
+!.ddev
+!.ddev/*
+!.gitignore
