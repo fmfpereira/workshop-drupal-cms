@@ -1,5 +1,6 @@
-
 # Preparar o Ambiente de Desenvolvimento Local
+
+## O DDEV não está instalado no meu host
 
 1. **Instalar o VirtualBox**:
 
@@ -31,11 +32,19 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 - Navegar até a pasta do projeto Drupal CMS: `cd Sites/drupalcms`
 - Iniciar o DDEV: `ddev start`
 - Abrir o Navegador da maquina virtual.
-- Aceder o website Drupal através de: [https://drupal-cms.ddev.site](https://drupal-cms.ddev.site)
+- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
+
+## O DDEV está instalado no meu host
+
+- Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms)
+    - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
+- Iniciar o DDEV: `ddev start`
+- Instalar as dependências: `ddev composer install`
+- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
 
 ## Instalar o Drupal CMS
 
-1. **Aceder à Página de Instalação**: https://drupal-cms.ddev.site
+1. **Aceder à Página de Instalação**: https://drupalcms.ddev.site
     - Ao visitar o website pela primeira vez, seremos redirecionados para a página de instalação do Drupal.
 2. **Configurar a Instalação**:
     - Selecionar a opção "Blog".
