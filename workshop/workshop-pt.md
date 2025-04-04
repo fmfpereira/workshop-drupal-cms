@@ -15,7 +15,7 @@
 3. **Iniciar a Máquina Virtual**:
 
     - Selecionar a máquina virtual importada e clicar em "Iniciar".
-    - Fazer login com as credenciais padrão: utilizador "ectl" e palavra-passe "ectl".
+    - Fazer login com as credenciais padrão: utilizador "drupal" e palavra-passe "drupal".
 
 ### Configurar o DDEV (Servidor Local)
 
@@ -29,7 +29,7 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 **Iniciar o Projeto DDEV**:  
 
 - Abrir o terminal/linha de comandos.
-- Navegar até a pasta do projeto Drupal CMS: `cd Sites/drupalcms`
+- Navegar até a pasta do projeto Drupal CMS: `cd Sites/workshop-drupal-cms/ddev`
 - Iniciar o DDEV: `ddev start`
 - Abrir o Navegador da maquina virtual.
 - Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)

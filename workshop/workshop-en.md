@@ -15,7 +15,7 @@
 3. **Start the Virtual Machine**:
 
     - Select the imported virtual machine and click "Start".
-    - Log in with the default credentials: user "ectl" and password "ectl".
+    - Log in with the default credentials: user "drupal" and password "drupal".
 
 ### Configure DDEV (Local Server)
 
@@ -27,7 +27,7 @@ DDEV simplifies the configuration of development environments for web projects. 
 **Start the DDEV Project**:
 
 - Open the terminal/command line.
-- Navigate to the Drupal CMS project folder: `cd Sites/drupalcms`
+- Navigate to the Drupal CMS project folder: `cd Sites/workshop-drupal-cms/ddev`
 - Start DDEV: `ddev start`
 - Open the Virtual Machine's browser.
 - Access the Drupal website via: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
