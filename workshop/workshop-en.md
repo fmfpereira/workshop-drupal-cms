@@ -200,7 +200,7 @@ The Coffee module comes pre-installed and allows you to quickly access any admin
 2. **Update Outdated Modules**:
     - Navigate to "Extend" and then "Update extensions".
     - Update the "Diff" module (and other outdated modules).
-3. Experiment with the new module to compare Content Revisions**:
+3. **Experiment with the new module to compare Content Revisions**:
     - Edit content and create a new revision.
     - Select the "Revisions" tab.
     - Use the "Compare Revisions" function to view the differences.

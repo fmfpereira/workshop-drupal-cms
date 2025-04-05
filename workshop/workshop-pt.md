@@ -205,7 +205,7 @@ O Modulo Coffee já vem instalado permite aceder rapidamente a qualquer página 
 2. **Atualizar Módulos Desatualizados**:
     - Navegar para "Extend" e depois "Update extensions".
     - Atualizar o módulo "Diff" (e outros módulos desatualizados).
-3. Experimentar o novo módulo para comparar Revisões de Conteúdo**:
+3. **Experimentar o novo módulo para comparar Revisões de Conteúdo**:
     - Editar um conteúdo e criar uma nova revisão.
     - Selecionar na aba a opção "Revisions"
     - Utilizar a função "Compare Revisions" para visualizar as diferenças.
