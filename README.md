@@ -16,5 +16,5 @@ It's schedule to be **presented** on:
 
 Had been presented on:
 
-05/04/2025 - [Drupal Ibéria](https://2025.drupaliberia.eu/sessions/schedule/2025-04-05)
+05/04/2025 - [Drupal Ibéria](https://2025.drupaliberia.eu/sessions/schedule/2025-04-05)  
 22/02/2025 - [ECTL](ectl.pt)
