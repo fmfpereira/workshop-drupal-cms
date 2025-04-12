@@ -14,8 +14,9 @@
     - Descarregar o VirtualBox a partir de: [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
     - Executar o instalador e seguir as instruções padrão.
 2. **Importar a Aplicação Virtual (OVA)**:
+    - Descarregar o ficheiro OVA em https://drive.google.com/drive/folders/1bC3XBcNKhuYoTwvBIyC4aqspNKqmQ8e9
     - Abrir o VirtualBox e selecionar "Importar Aplicação".
-    - Navegar até o ficheiro `.ova` fornecido na pen USB e selecionar.
+    - Selecionar o ficheiro `.ova`.
     - Garantir a seleção da opção "Generate new MAC addresses for all network adapters".
     - Confirmar e aguardar a importação da máquina virtual.
 3. **Iniciar a Máquina Virtual**:

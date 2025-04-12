@@ -14,8 +14,9 @@
     - Download VirtualBox from: [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
     - Run the installer and follow the standard instructions.
 2. **Import the Virtual Application (OVA)**:
+    - Download the OVA file available at https://drive.google.com/drive/folders/1bC3XBcNKhuYoTwvBIyC4aqspNKqmQ8e9
     - Open VirtualBox and select "Import Appliance".
-    - Navigate to the `.ova` file provided on the USB drive and select it.
+    - Select the `.ova` file.
     - Ensure the option "Generate new MAC addresses for all network adapters" is selected.
     - Confirm and wait for the virtual machine to import.
 3. **Start the Virtual Machine**:
