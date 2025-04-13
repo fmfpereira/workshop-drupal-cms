@@ -35,6 +35,15 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 - Abrir o terminal/linha de comandos.
 - Navegar até a pasta do projeto Drupal CMS: `cd Sites/workshop-drupal-cms/ddev`
 - Iniciar o DDEV: `ddev start`
+- Abrir o Navegador da maquina virtual.
+- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
+
+## O DDEV está instalado no meu host
+
+- Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms)
+  - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
+- Iniciar o DDEV: `ddev start`
+- Instalar as dependências: `ddev composer install`
 - Abrir o Navegador da máquina virtual.
 - Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
 
@@ -46,6 +55,7 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
     - Selecionar uma funcionalidade ou avançar o primeiro passo.
     - Definir o nome do website.
     - Criar um utilizador e definir uma palavra-passe segura.
+      - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
         - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
     - Aguardar a conclusão da instalação.
 
@@ -179,3 +189,151 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ![Lista de revisões do conteúdo](images/node-revisions-list.jpg){width=60%}
 
 ![Diferença entre as revisões](images/revisions-diff.jpg){width=60%}
+
+## Drupal CMS com AI
+
+### Como instalar, configurar e usar AI no Drupal
+
+![Start](images/AI/1_Start_AI.png){width=60%}
+Instalar a receita "AI Assistant"
+![Ai Recipe](images/AI/2_AI_Recipe.png){width=60%}
+Seleccionar o provider de AI, e inserir a API Key
+![Config Provider](images/AI/3_Config_Provider.png){width=60%}
+Após a instalação, parece em baixo á direita o Chatbox
+![Open Chatbot](images/AI/4_Open_ChatBot.png){width=60%}
+Podemos então perguntar **What can you do ?** e esperar pela resposta.
+![Talk Chatbot](images/AI/5_Talk_ChatBot.png){width=60%}
+usando as teclas ALT+D, podemos procurar por **AI** e seleccionar AI
+![Coffee AI](images/AI/6_Coffee_AI.png){width=60%}
+Seleccionar "Provider Settings"
+![Conf Page](images/AI/7_AI_Conf_Page.png){width=60%}
+Aqui temos uma lista de AI Porviders. De momento apenas os dois instalados por defeito.
+![AI Providers Page](images/AI/8_AI_Providers_Page.png){width=60%}
+Vamos usar o "Browse Modules" para procurar outros providers procurando por **AI Provider"
+![Extend Search AI Provider](images/AI/9_Extend_Search_AI_Provider.png){width=60%}
+Na lista podem opcionalmente desinstalar o "Anthropic Provider" pois é instalado por defeito, mas não é usado. Vamos instalar o "Ollama Provider".
+O Ollama permite instalarmos diversos modelos de AI no nosso próprio PC.
+![Install AI provider](images/AI/10_Unninstall_Install_AI_Provider.png){width=60%}
+De momento a maioria dos módulos de AI no Drupal, estão sem versão estável (alpha ou beta) e por isso têm de ser instalados manualmente, como vamos demonstrar. Os próximos passos já forem executados para este workshop, pelo que são meramente informativos.
+![Error Non Stale Realease](images/AI/11_Error_Non_Stable_Release.png){width=60%}
+Para fazer a instalação manual, têm de ir a [Drupal.org](www.drupal.org/project/ai_provider_ollama), procurar o módulo e copiar as instruções de instalação.
+![Ollama Page](images/AI/12_Ollama_Page.png){width=60%}
+Na linha de commandos, na pasta do projeto, executamos o DDEV:
+**ddev composer require 'drupal/ai_provider_ollama:^1.0@beta'**
+![DDEV Install AI Provider](images/AI/13_DDEV_Install_AI_Provider_Ollama.png){width=60%}
+Após a instalação do módulo podemos configura-lo.
+![Ollama Provider Installation](images/AI/14_Ollama_Provider_Installation.png){width=60%}
+Na configuração colocamos o endereço (localhost, servidor na rede local, docker ) e a porta.
+![Ollama Provider Config](images/AI/15_Ollama_Provider_Config.png){width=60%}
+![AI Providers Page](images/AI/16_AI_Providers_Page.png){width=60%}
+Vamos ver a lista de AI Agents.
+![AI Settings Page](images/AI/17__AI_Settings.png){width=60%}
+Por defeito são instalados 3 AI Agents. A AI interpreta o que Os agentes servem como pontes entre o sistema  e o modelo de AI. Ele converte as decisões da AI em comandos válidos para o sistema. Por exemplo, se a AI “decidir” que um campo precisa de ser criado, o agente sabe qual endpoint chamar ou qual função invocar.
+![AI Agents Settings Page](images/AI/17_AI_Sgents_Settings_Page.png){width=60%}
+Podemos editar os agentes... Mas não recomendo !
+![Edit AI Agent](images/AI/18_Edit_AI_Agent.png){width=60%}
+Vamos instalar mais 3 AI Agents. Estes ainda são experimentais, mas vão permitir mais algumas acçoes.
+![AI Agents Installation](images/AI/19_AI_Agents_Installation.png){width=60%}
+Usando ALT+D, e procurando por **Agents** vamos aos "AI Agent Settings"
+![Return AI Agents Page](images/AI/20_Return_AI_Agents_Page.png){width=60%}
+Podemos ver que a lista tem agora 6 AI Agents, e podemos ver a descrição de cada um para sabermos o que cada um nos permite fazer.
+![AI Agents Settings](images/AI/21_AI_Agents_Settings.png){width=60%}
+Vamos agora configurar o AI Assistant (Chatbot).
+![AI Assistants](images/AI/22_AI_Assistants.png){width=60%}
+![Edit AI Assistant](images/AI/23_Edit_AI_Assistant.png){width=60%}
+Temos de configurar o Chatbot para usar os agentes que instalamos de forma a que a AI tenha acesso ás suas funcionalidades.
+![Select Agents AI](images/AI/24_Select_Agents_AI_Assistant.png){width=60%}
+![AI General](images/AI/25_AI_General.png){width=60%}
+![Return AI Conf](images/AI/26__Return_AI_Conf.png){width=60%}
+Temos a opção de configurar um AI Provider por cada tipo de acção, como temos apenas um provider os defaults funcionam, excepto para "Embeddings" que tem de ser configurado como indicado.
+![AI Settings](images/AI/27__Ai_Settings_1.png){width=60%}
+Vamos alterar as configurações de "AI Image Alt Text Settings"
+![Return AI Conf](images/AI/28__Return_AI_Conf.png){width=60%}
+Ativar a opção **Autogenerate on upload**, temos ainda a opção "Hide Button", mas não recomendo porque se não estivermos satisfeito com o Alt Text gerado, temos o botão para voltar a tentar.
+![Alt Text Settings](images/AI/29_Alt_Text_Settings.png){width=60%}
+Agora podemos escolher uma de duas opçoes:
+    1. No menu - Create - Image
+    2. No menu - Media - +Add Media
+![Add Image](images/AI/30_Add_Image.png){width=60%}
+Após fazer upload da imagem deve ser gerado um Alt Text pela AI, se não estivermos satisfeitos com o resultado temos o botão "Generate with AI" para tentar novamente.
+![Image AI Alt Text](images/AI/31_Image_AI_Alt_Text.png){width=60%}
+Agora vamos pedir ao Chatbot para instalar um módulo. **Enable AI Image Bulk Text Module"**
+![Chatbot Install AI Image Bulk](images/AI/32_Chatbot_Install_AI_Image_Bulk_Alt_Text.png){width=60%}
+Vamos verificar se foi instalado.
+![Extend Confirm Image Bulk](images/AI/33_Extent_Confirm_Image_Bulk.png){width=60%}
+Procurando por **Bulk** deve indicar que está instalado. Vamos também limpar o histórico do Chatbot.
+![Chatbot Clear History](images/AI/34_Chatbot_Clear_History.png){width=60%}
+Vamos aproveitar para instalar outros módulos. **AI CKEditor Integration**
+![Enable AI CKEditor](images/AI/35_Enable_AI_CKEditor.png){width=60%}
+**AI Translate**
+![Enable AI Translate](images/AI/36_Enable_AI_Translate.png){width=60%}
+Usando **ALt+D** vamos procurar por **Bulk** e seleccionar **Bulk Generate Alt Text AI**
+![Coffe AI Image Bulk](images/AI/37_Coffee_AI_Image_Bulk.png){width=60%}
+Esta lista está vazia, mas se isto fosse um update de um site existente com centenas ou milhares de imagens sem Alt Text, poderiamos criar Alt Text com AI para todas elas.
+Vamos usar o Chatbox para criar o que em Drupal chamamos **Taxonomias**. São simples listas que podem ser usadas de multiplas formas.
+Vamos pedir no Chatbox, **Generate a Taxonomy with tha language of all European country's**
+![AI Image Bulk](images/AI/38_AI_Image_Bulk.png){width=60%}
+Precisamos sempre de confirmar, antes da AI fazer algo.
+![Create Taxonomy European languages](images/AI/39_Create_Taxonomy_European_Languages.png){width=60%}
+É apresentado um resumo do que foi feito, com um link para pudermos confirmar.
+![Check Taxonomy](images/AI/40_Check_Taxonomy.png){width=60%}
+Confirmado ! Taxonomia criada.
+Vamos criar outra, mas de forma um pouco diferente. Vamos perguntar: **What do you suggest to create a toxonomy for "AI Tone"**
+![AI Tone Suggestions](images/AI/41_AI_Tone_Suggestions.png){width=60%}
+A AI faz algumas sugestóes, e pedimos para fazer o que sugere, acrescentando os termos **Technical** e **Childish**
+![Create Tone Taxonomy](images/AI/42_Create_Tone_Taxonomy.png){width=60%}
+Feito ! Vamos confirmar.
+![Check Tone Taxonomy](images/AI/43_Check_Tone_Taxonomy.png){width=60%}
+Imaginem quanto tempo pouparam! Usando **ALT+D**, vamos procurar por **Text** e seleccionar **Text formats and editors**
+![Coffee Text Formats](images/AI/44_Coofee_Text_Formats.png){width=60%}
+O Drupal tem integrado o CKEditor, o que nos permite criar e editar conteúdos de texto de forma muito intuitiva. Vamos configurar o CKEditor.
+![Text Formats](images/AI/45_Text_formats.png){width=60%}
+Para permitir o uso de AI ao criar / editar conteúdos temos de adicionar o respectivo botão e arrastá-lo da barra de **Available buttons** para a de **Active toolbar**
+![Add AI Button Toolbar](images/AI/46_Add_AI_Button_Toolbar.png){width=60%}
+Ao colocar o botão de AI na **Active Toolbar**, aparece uma nova opção no menu abaixo com o nome **AI Tools**. Vamos configurar o **Tone**
+![CKEditor AI Tools](images/AI/47_CKEditor_AI_Tools.png){width=60%}
+"AI Tone" refere-se ao estilo, atitude ou "voz" que uma AI adota ao se comunicar.
+Por isso aqui vamos seleccionar a taxonomia que criamos antes **AI Tone**, podemos definir o **Provider** se tivermos mais que um, e ativar em **Enable**
+![AI Tone](images/AI/48_AI_Tone.png){width=60%}
+Aqui seleccionamos a taxonomia **European Languages**, selecionamos o **Provider** e ativamos em **Enable**
+![AI Translate](images/AI/49_AI_Translate.png){width=60%}
+Em **Generate with AI** seleccionamos o **Provider** e ativamos em **Enable**
+O mesmo em **Summarize** e **Save** no topo direito.
+![AI Generate](images/AI/50_AI_Generate.png){width=60%}
+Vamos a "AI Default Settings"
+![Codde AI Settings](images/AI/51_Coffee_AI_Settings.png){width=60%}
+Vamos configurar o **Translate Text** com o provider **Chat Proxy to LLM** e modelo **gpt-4o**.
+No menu esquerdo, **Create** - **News Item**
+![Translate Provider](images/AI/52_Translate_Provider.png){width=60%}
+![Ceate News Item](images/AI/53_Create_news_Item.png){width=60%}
+![AI Generate News](images/AI/54_AI_Generate_News.png){width=60%}
+![Text Summarize](images/AI/55_Text_Summarize.png){width=60%}
+![AI Generate Summary](images/AI/56_AI_Generate_Summary.png){width=60%}
+![AI Tone](images/AI/57_AI_Tone.png){width=60%}
+![AI Tone Generation](images/AI/58_AI_Tone_Generation.png){width=60%}
+![AI Translate](images/AI/59_AI_Translate.png){width=60%}
+![AI Translation](images/AI/60_AI_Translation.png){width=60%}
+![Title Save](images/AI/61_Title_Save.png){width=60%}
+![Translate Content](images/AI/62_Translate_Content.png){width=60%}
+![AI Translation Option](images/AI/63_AI_Translation_Option.png){width=60%}
+![Translated Return Extended](images/AI/64_Translated_Return_Extend.png){width=60%}
+![Enable AI Media](images/AI/65_Enable_AI_Media.png){width=60%}
+![Enable AI Audio](images/AI/66_Enable_AI_Audio.png){width=60%}
+![Content](images/AI/67_Content.png){width=60%}
+![Add Media](images/AI/68_Add_Media.png){width=60%}
+![Option Generate Image AI](images/AI/69_Option_Generate_Image_AI.png){width=60%}
+![AI Image Prompt](images/AI/70_AI_Image_Prompt.png){width=60%}
+![AI Image Options](images/AI/71_AI_Image_Options.png){width=60%}
+![AI Image Generate](images/AI/72_AI_Image_Generate.png){width=60%}
+![Save Image Library](images/AI/73_Save_Image_Library.png){width=60%}
+![Image Insert](images/AI/74_Image_Insert.png){width=60%}
+![Save with Image](images/AI/75_Save_With_Image.png){width=60%}
+![Chatbot Ask Create Transcription Field](images/AI/76_Chatbot_Ask_Create_Transcription_Field.png){width=60%}
+![Chatbot Create Field](images/AI/77_Chatbot_Create_Field.png){width=60%}
+![Edit News Audio](images/AI/78_Edit_News_Audio.png){width=60%}
+![Audio Select Text](images/AI/79_Audio_Select_Text.png){width=60%}
+![Generate Transcription Audio](images/AI/80_Generate_Transcription_Audio.png){width=60%}
+![Audio Generated](images/AI/81_Audio_Generated.png){width=60%}
+![Back to Site](images/AI/82_Back_To_Site.png){width=60%}
+![News EN](images/AI/83_News_EN.png){width=60%}
+![News PT](images/AI/84_News_PT.png){width=60%}
