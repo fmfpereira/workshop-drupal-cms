@@ -246,7 +246,7 @@ Para fazer a instalação manual, ir a [Drupal.org](www.drupal.org/project/ai_pr
 ![Ollama Page](images/AI/12_Ollama_Page.png){width=60%}
 
 Na linha de commandos, na pasta do projeto, executamos o DDEV:
-**ddev composer require 'drupal/ai_provider_ollama:^1.0@beta'**
+`ddev composer require 'drupal/ai_provider_ollama:^1.0@beta'`
 
 ![DDEV Install AI Provider](images/AI/13_DDEV_Install_AI_Provider_Ollama.png){width=60%}
 
@@ -347,7 +347,7 @@ Usando **ALt+D** procurar por **Bulk** e seleccionar **Bulk Generate Alt Text AI
 
 Esta lista está vazia, mas se isto fosse um update de um site existente com centenas ou milhares de imagens sem Alt Text, poderiamos criar Alt Text com AI para todas elas.
 Vamos usar o Chatbox para criar o que em Drupal chamamos **Taxonomias**. São simples listas que podem ser usadas de multiplas formas.
-Vamos pedir no Chatbox, **Generate a Taxonomy with tha language of all European country's**
+Vamos pedir no Chatbox, `Generate a Taxonomy with tha language of all European country's`
 
 ![AI Image Bulk](images/AI/38_AI_Image_Bulk.png){width=60%}
 
@@ -360,7 +360,7 @@ Precisamos sempre de confirmar, antes da AI fazer algo.
 ![Check Taxonomy](images/AI/40_Check_Taxonomy.png){width=60%}
 
 Confirmado ! Taxonomia criada.
-Vamos criar outra, mas de forma um pouco diferente. Vamos perguntar: **What do you suggest to create a toxonomy for "AI Tone"**
+Vamos criar outra, mas de forma um pouco diferente. Perguntar: `What do you suggest to create a toxonomy for "AI Tone"`
 
 ![AI Tone Suggestions](images/AI/41_AI_Tone_Suggestions.png){width=60%}
 
@@ -415,7 +415,7 @@ Na barra do CKEditor seleccionamos o botão do **AI Assistant**, e seleccionamos
 
 ![Ceate News Item](images/AI/53_Create_news_Item.png){width=60%}
 
-Na AI prompt, escrevemos **A text about FEUP, in Porto, Portugal. It's origin, history, famous peoplle and events**
+Na AI prompt, escrevemos `A text about FEUP, in Porto, Portugal. It's origin, history, famous peoplle and events`
 Sejam sempre especificos. E não se adimirem se tiverem multiplos resultados diferentes de forem clicando em **Generate**.
 O texto gerado não foi verificado, devem sempre fazê-lo para evitar alucinações !!
 Concluir clicando em **Save changes to editor**
@@ -494,11 +494,11 @@ Seleccionar o modelo, o tamanho da imagem, a qualidade e o estilo.
 ![AI Image Options](images/AI/71_AI_Image_Options.png){width=60%}
 
 Clicar em **Generate Image** e esperar.
-Se a imagem não agradar, clicar novamente em **Generate Image**, e /,ou refinar o prompt.
+Se a imagem não agradar, clicar novamente em **Generate Image**, e / ou refinar o prompt.
 
 ![AI Image Generate](images/AI/72_AI_Image_Generate.png){width=60%}
 
-Se a aimagem agradar, clicar em **Save to media Library**
+Se a imagem agradar, clicar em **Save to media Library**
 
 ![Save Image Library](images/AI/73_Save_Image_Library.png){width=60%}
 
@@ -512,7 +512,7 @@ De notar que após a criação da tradução deste conteúdo, o botão passou de
 ![Save with Image](images/AI/75_Save_With_Image.png){width=60%}
 
 O Tipo de Conteúdo (Content Type) para noticias já existe, mas vamos usar o Chatbot para criar um campo adicional neste tipo de conteúdo.
-Vamos ser muito especificos e usar o seguinte prompt, **Using the AI Audio Field module, create on the News content type, a translatable field called "Transcription**
+Vamos ser muito especificos e usar o seguinte prompt `Using the AI Audio Field module, create on the News content type, a translatable field called "Transcription"`
 
 ![Chatbot Ask Create Transcription Field](images/AI/76_Chatbot_Ask_Create_Transcription_Field.png){width=60%}
 
