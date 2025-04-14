@@ -199,20 +199,32 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ### Como instalar, configurar e usar AI no Drupal
 
 ![Start](images/AI/1_Start_AI.png){width=60%}
-Instalar a receita "AI Assistant"
-![Ai Recipe](images/AI/2_AI_Recipe.png){width=60%}
-Seleccionar o provider de AI, e inserir a API Key
-![Config Provider](images/AI/3_Config_Provider.png){width=60%}
-Após a instalação, parece em baixo á direita o Chatbox
-![Open Chatbot](images/AI/4_Open_ChatBot.png){width=60%}
-Podemos então perguntar **What can you do ?** e esperar pela resposta.
-![Talk Chatbot](images/AI/5_Talk_ChatBot.png){width=60%}
-usando as teclas ALT+D, podemos procurar por **AI** e seleccionar AI
-![Coffee AI](images/AI/6_Coffee_AI.png){width=60%}
-Seleccionar "Provider Settings"
-![Conf Page](images/AI/7_AI_Conf_Page.png){width=60%}
-Aqui temos uma lista de AI Porviders. De momento apenas os dois instalados por defeito.
 
+Instalar a receita "AI Assistant"
+
+![Ai Recipe](images/AI/2_AI_Recipe.png){width=60%}
+
+Seleccionar o provider de AI, e inserir a API Key
+
+![Config Provider](images/AI/3_Config_Provider.png){width=60%}
+
+Após a instalação, parece em baixo á direita o Chatbox
+
+![Open Chatbot](images/AI/4_Open_ChatBot.png){width=60%}
+
+Podemos então perguntar **What can you do ?** e esperar pela resposta.
+
+![Talk Chatbot](images/AI/5_Talk_ChatBot.png){width=60%}
+
+usando as teclas ALT+D, podemos procurar por **AI** e seleccionar AI
+
+![Coffee AI](images/AI/6_Coffee_AI.png){width=60%}
+
+Seleccionar "Provider Settings"
+
+![Conf Page](images/AI/7_AI_Conf_Page.png){width=60%}
+
+Aqui temos uma lista de AI Porviders. De momento apenas os dois instalados por defeito.
 
 ![AI Providers Page](images/AI/8_AI_Providers_Page.png){width=60%}
 Vamos usar o "Browse Modules" para procurar outros providers procurando por **AI Provider"
