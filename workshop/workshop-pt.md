@@ -1,29 +1,7 @@
-# Preparar o Ambiente de Desenvolvimento Local
+# Workshop DrupalCMS e AI
+## Preparar o Ambiente de Desenvolvimento Local
 
-## O DDEV está instalado no meu host
-
-- Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms)
-  - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
-- Iniciar o DDEV: `ddev start`
-- Instalar as dependências: `ddev composer install`
-- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
-
-## O DDEV não está instalado no meu host
-
-1. **Instalar o VirtualBox**:
-   - Descarregar o VirtualBox a partir de: [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
-   - Executar o instalador e seguir as instruções padrão.
-2. **Importar a Aplicação Virtual (OVA)**:
-   - Descarregar o ficheiro OVA [Aqui](https://drive.google.com/drive/folders/1bC3XBcNKhuYoTwvBIyC4aqspNKqmQ8e9)
-   - Abrir o VirtualBox e selecionar "Importar Aplicação".
-   - Selecionar o ficheiro `.ova`.
-   - Garantir a seleção da opção "Generate new MAC addresses for all network adapters".
-   - Confirmar e aguardar a importação da máquina virtual.
-3. **Iniciar a Máquina Virtual**:
-   - Selecionar a máquina virtual importada e clicar em "Iniciar".
-   - Fazer login com as credenciais padrão: utilizador "drupal" e palavra-passe "drupal".
-
-### Configurar o DDEV (Servidor Local)
+### Instalar e configurar o DDEV
 
 O DDEV simplifica a configuração de ambientes de desenvolvimento para projetos web.
 Para este workshop, o DDEV já está pré-instalado e configurado para o projeto Drupal CMS.
@@ -32,21 +10,12 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 - Instalação: [https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
 - Guia Rápido Drupal: [https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms)
 
-**Iniciar o Projeto DDEV**:
-
-- Abrir o terminal/linha de comandos.
-- Navegar até a pasta do projeto Drupal CMS: `cd Sites/workshop-drupal-cms/ddev`
-- Iniciar o DDEV: `ddev start`
-- Abrir o Navegador da maquina virtual.
-- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
-
-## O DDEV está instalado no meu host
+### Obter e iniciar o projecto
 
 - Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms)
   - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
 - Iniciar o DDEV: `ddev start`
 - Instalar as dependências: `ddev composer install`
-- Abrir o Navegador da máquina virtual.
 - Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
 
 ## Instalar o Drupal CMS
@@ -54,16 +23,21 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 1. **Aceder à Página de Instalação**: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
    - Ao visitar o website pela primeira vez, seremos redirecionados para a página de instalação do Drupal.
 2. **Configurar a Instalação**:
-   - Selecionar uma funcionalidade ou avançar o primeiro passo.
+   - Selecionar a funcionalidade blog.
    - Definir o nome do website.
    - Criar um utilizador e definir uma palavra-passe segura.
      - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
        - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
    - Aguardar a conclusão da instalação.
 
+<details>
+<summary>Exemplos</summary>
+
 ![Ecrã de instalação do Drupal CMS](images/install.jpg){width=60%}
 
 ![Instalação do Drupal CMS a decorrer.](images/install-running.jpg){width=60%}
+
+</details>
 
 ## Adicionar Funcionalidades com Receitas (Add-ons)
 
@@ -80,13 +54,25 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 3. **Visualizar Novos Conteúdos**:
    - No Dashboard explorar as novas listagens e entradas de conteúdo: blogs, notícias, eventos e formulário de contacto.
 
+<details>
+<summary>Exemplos</summary>
+
 ![Dashboard do Drupal CMS](images/dashboard-install-add-ons.jpg){width=60%}
 
 ![Instalação de add-ons](images/recipes-install.jpg){width=60%}
 
 ![Visão geral do conteúdo recente no Dashboard do Drupal CMS](images/dashboard-recent-content.jpg){width=60%}
 
-### Ativar o suporte multilingue
+</details>
+
+## Instalar e ativar o suporte multilingue
+
+### Instalar os módulos
+
+1. Navegar para "Extend" e depois "List".
+2. Ativar os módulos "Language" e "Interface translation" e "Content translation".
+
+### Ativar e configurar o suporte multilingue
 
 O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer página de administração com apenas algumas teclas.
 
@@ -102,6 +88,9 @@ O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer pági
 4. **Configurar o Módulo Content Translation**:
    - Navegar para "Configuration" e depois "Regional and Language" e depois "Content Language and Translation".
    - Selecione 'Content', selecione os tipos de conteúdo, defina como 'Translatable' e ative a opção 'Show language selector'.
+
+<details>
+<summary>Exemplos</summary>
 
 ![Usar o módulo Coffee para encontrar rapidamente as configurações de idioma no Drupal.](images/coffee-languages-settings.jpg){width=60%}
 
@@ -123,6 +112,8 @@ O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer pági
 
 ![Alterar o idioma da página inicial](images/homepage-select-language.jpg){width=60%}
 
+</details>
+
 ## Criar Conteúdo
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
@@ -140,6 +131,9 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 - Modificar o URL do conteúdo.
 - Alterar o autor e a data de publicação.
 
+<details>
+<summary>Exemplos</summary>
+
 ![Link para a página de notícias via Dashboard do Drupal CMS](images/dashboard-news-page.jpg){width=60%}
 
 ![Link para adicionar notícias na listagem](images/news-overview-new-content.jpg){width=60%}
@@ -148,6 +142,8 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 
 ![Publicar uma noticia](images/new-published-news.jpg){width=60%}
 
+</details>
+
 ## Traduzir conteúdo
 
 - Editar uma das páginas criadas anteriormente.
@@ -155,11 +151,16 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 - Mudar o idioma do site para português.
 - Traduzir outros conteúdos relevantes e ver o resultado.
 
+<details>
+<summary>Exemplos</summary>
+
 ![Link para a opção de traduzir a página inicial.](images/translate-homepage-tab.jpg){width=60%}
 
 ![Link para adicionar a tradução em Português](images/add-translation-operation.jpg){width=60%}
 
 ![Traduzir a página inicial.](images/create-translation.jpg){width=60%}
+
+</details>
 
 ## Atualizar o Website e Módulos
 
@@ -171,9 +172,14 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
    - Navegar para "Extend" e depois "Update extensions".
    - Atualizar o módulo "Diff" (e outros módulos desatualizados).
 
+<details>
+<summary>Exemplos</summary>
+
 ![Ativar o modulo diff](images/enable-diff-module.jpg){width=60%}
 
 ![Drupal CMS preparado para atualizar o módulo diff](images/update-ready.jpg){width=60%}
+
+</details>
 
 ## Gerir Revisões de Conteúdo
 
@@ -186,6 +192,9 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
    - Explorar a opção de restaurar versões anteriores do conteúdo.
    - Utilizar a função "Compare Revisions" para visualizar as diferenças.
 
+<details>
+<summary>Exemplos</summary>
+
 ![Lista completa de conteúdo](images/content-overview-news.jpg){width=60%}
 
 ![Link para aceder à página de revisões do conteúdo](images/node-revisions-link.jpg){width=60%}
@@ -193,6 +202,8 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ![Lista de revisões do conteúdo](images/node-revisions-list.jpg){width=60%}
 
 ![Diferença entre as revisões](images/revisions-diff.jpg){width=60%}
+
+</details>
 
 ## Drupal CMS com AI
 
