@@ -208,6 +208,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 2. **Instalar os restantes módulos de suporte**
     - AI Agents Explorer
     - AI Agents Extra
+    - AI Agents Form Integration
     - AI CKEditor integration
     - AI Translate
     - AI Media Image

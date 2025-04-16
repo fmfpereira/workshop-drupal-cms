@@ -218,6 +218,7 @@ By default, when creating new content, a revision is automatically generated. Th
 2.  **Install the Remaining Support Modules**
     - AI Agents Explorer
     - AI Agents Extra
+    - AI Agents Form Integration
     - AI CKEditor integration
     - AI Translate
     - AI Media Image
