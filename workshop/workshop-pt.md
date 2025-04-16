@@ -1,34 +1,31 @@
 # Workshop DrupalCMS e AI
+
 ## Preparar o Ambiente de Desenvolvimento Local
 
 ### Instalar e configurar o DDEV
 
-O DDEV simplifica a configuração de ambientes de desenvolvimento para projetos web.
-Para este workshop, o DDEV já está pré-instalado e configurado para o projeto Drupal CMS.
-Para mais informações sobre a instalação e configuração do DDEV, consultar:
-
-- Instalação: [https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
+O DDEV simplifica a configuração de ambientes de desenvolvimento para projetos web. Para este workshop, o DDEV já está pré-instalado e configurado para o projeto Drupal CMS. Para mais informações sobre a instalação e configuração do DDEV, consultar:
+- Instalação: [https://ddev.readthedocs.io/en/stable/users/install/ddev-installation](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/ )
 - Guia Rápido Drupal: [https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal-drupal-cms)
 
-### Obter e iniciar o projecto
+### Obter e iniciar o projeto
 
-- Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms)
-  - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
+- Clonar o repositório do workshop: [https://gitlab.com/fmfpereira/workshop-drupal-cms](https://gitlab.com/fmfpereira/workshop-drupal-cms "null")
+    - Executar o comando: `git clone https://gitlab.com/fmfpereira/workshop-drupal-cms.git`
 - Iniciar o DDEV: `ddev start`
 - Instalar as dependências: `ddev composer install`
-- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
+- Aceder ao website Drupal através de: [https://drupalcms.ddev.site](https://drupalcms.ddev.site "null")
 
 ## Instalar o Drupal CMS
 
 1. **Aceder à Página de Instalação**: [https://drupalcms.ddev.site](https://drupalcms.ddev.site)
-   - Ao visitar o website pela primeira vez, seremos redirecionados para a página de instalação do Drupal.
+    - Ao visitar o website pela primeira vez, o utilizador será redirecionado para a página de instalação do Drupal.
 2. **Configurar a Instalação**:
-   - Selecionar a funcionalidade blog.
-   - Definir o nome do website.
-   - Criar um utilizador e definir uma palavra-passe segura.
-     - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
-       - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
-   - Aguardar a conclusão da instalação.
+    - Selecionar a funcionalidade blog.
+    - Definir o nome do website.
+    - Criar um utilizador e definir uma palavra-passe segura.
+        - O primeiro utilizador a registar-se será automaticamente designado como super administrador do site.
+    - Aguardar a conclusão da instalação.
 
 <details>
 <summary>Exemplos</summary>
@@ -42,17 +39,17 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 ## Adicionar Funcionalidades com Receitas (Add-ons)
 
 1. **Explorar o Dashboard**:
-   - Após a instalação, o dashboard do Drupal será exibido.
+    - Após a instalação, o dashboard do Drupal será exibido.
 2. **Instalar Add-ons Recomendados**:
-   - Selecionar "*Choose recommended add-ons*".
-   - Instalar os seguintes add-ons:
-     - Events
-     - News
-     - Forms
-     - Search
-     - Blog
+    - Selecionar "_Choose recommended add-ons_".
+    - Instalar os seguintes add-ons:
+        - Events
+        - News
+        - Forms
+        - Search
+        - Blog
 3. **Visualizar Novos Conteúdos**:
-   - No Dashboard explorar as novas listagens e entradas de conteúdo: blogs, notícias, eventos e formulário de contacto.
+    - No Dashboard explorar as novas listagens e entradas de conteúdo: blogs, notícias, eventos e formulário de contacto.
 
 <details>
 <summary>Exemplos</summary>
@@ -65,29 +62,28 @@ Para mais informações sobre a instalação e configuração do DDEV, consultar
 
 </details>
 
-## Instalar e ativar o suporte multilingue
+## Instalar e ativar o suporte multilíngue
 
 ### Instalar os módulos
 
-1. Navegar para "Extend" e depois "List".
-2. Ativar os módulos "Language" e "Interface translation" e "Content translation".
+1. Navegar para "_Extend_" e depois "_List_".
+2. Ativar os módulos "_Language_", "_Interface translation_" e "_Content translation_".
 
-### Ativar e configurar o suporte multilingue
+### Configurar o suporte multilíngue
 
 O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer página de administração com apenas algumas teclas.
-
 1. **Utilizar o Módulo Coffee**:
-   - Ativar o Coffee com `Alt + D` (ou atalho correspondente).
-   - Pesquisar por "Languages" e selecionar a opção.
+    - Ativar o Coffee com `Alt + D` (ou atalho correspondente).
+    - Pesquisar por "_Languages_" e selecionar a opção.
 2. **Instalar o Idioma Português (Portugal)**:
-   - Adicionar o idioma Português (Portugal).
-   - Aguardar o download das traduções do Drupal.
+    - Adicionar o idioma Português (Portugal).
+    - Aguardar o download das traduções do Drupal.
 3. **Configurar o Bloco de Mudança de Idioma**:
-   - Navegar para "Structure" e depois "Block layout".
-   - Adicionar o bloco "Language switcher" à região desejada (ex. Content above)
+    - Navegar para "_Structure_" e depois "_Block layout_".
+    - Adicionar o bloco "_Language switcher_" à região desejada (ex. Content above)
 4. **Configurar o Módulo Content Translation**:
-   - Navegar para "Configuration" e depois "Regional and Language" e depois "Content Language and Translation".
-   - Selecione 'Content', selecione os tipos de conteúdo, defina como 'Translatable' e ative a opção 'Show language selector'.
+    - Navegar para "_Configuration_" e depois "_Regional and Language_" e depois "_Content Language and Translation_".
+    - Selecionar "_Content_", selecionar todos os tipos de conteúdo, definir como "*Translatable*" e ativar a opção "*Show language selector*".
 
 <details>
 <summary>Exemplos</summary>
@@ -117,15 +113,12 @@ O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer pági
 ## Criar Conteúdo
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
-   - Navegar nas listagens de notícias, blog e eventos.
-   - Criar novos conteúdos.
+    - Navegar nas listagens de notícias, blog e eventos.
+    - Criar novos conteúdos.
 2. **Gerir Opções de Conteúdo**:
-   - Observar as opções de publicação, agendamento, SEO e autoria.
+    - Observar as opções de publicação, agendamento, SEO e autoria.
 
-Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão. O conteúdo não é publicado de imediato, sendo definido inicialmente como rascunho.
-Para publicar o conteúdo, utilize a opção disponível no painel lateral direito e defina o estado como "publicado".
-Adicionalmente, é possível personalizar diversas configurações do conteúdo, tais como:
-
+Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão. O conteúdo não é publicado de imediato, sendo definido inicialmente como rascunho. Para publicar o conteúdo, utilizar a opção disponível no painel lateral direito e definir o estado como "*published*". Adicionalmente, é possível personalizar diversas configurações do conteúdo, tais como:
 - Impedir que o conteúdo apareça nos resultados de pesquisa.
 - Agendar a publicação e despublicação do conteúdo.
 - Modificar o URL do conteúdo.
@@ -147,7 +140,7 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ## Traduzir conteúdo
 
 - Editar uma das páginas criadas anteriormente.
-  - Se traduzir a homepage, editar e re-gravar a versão inglesa (existe um bug no Drupal em que só é possível traduzir conteúdo criado antes da ativação das traduções quando o conteúdo original é regravado)
+    - Se traduzir a homepage, editar e re-gravar a versão inglesa (existe um bug no Drupal em que só é possível traduzir conteúdo criado antes da ativação das traduções quando o conteúdo original é regravado)
 - Mudar o idioma do site para português.
 - Traduzir outros conteúdos relevantes e ver o resultado.
 
@@ -165,12 +158,12 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ## Atualizar o Website e Módulos
 
 1. **Ativar o Módulo Diff**:
-   - Navegar para "Extend" e depois "List".
-   - Ativar o módulo "Diff".
-   - Este módulo está propositalmente desatualizado para demonstrar como realizar uma atualização.
+    - Navegar para "*Extend*" e depois "*List*".
+    - Ativar o módulo "Diff".
+    - Este módulo está propositalmente desatualizado para demonstrar como realizar uma atualização.        
 2. **Atualizar Módulos Desatualizados**:
-   - Navegar para "Extend" e depois "Update extensions".
-   - Atualizar o módulo "Diff" (e outros módulos desatualizados).
+    - Navegar para "*Extend*" e depois "*Update extensions*".
+    - Atualizar o módulo "*Diff*" (e outros módulos desatualizados).
 
 <details>
 <summary>Exemplos</summary>
@@ -184,13 +177,13 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 ## Gerir Revisões de Conteúdo
 
 1. **Aceder à Lista de Conteúdo**:
-   - Navegar para a secção "Content" na barra lateral esquerda.
+    - Navegar para a secção "*Content*" na barra lateral esquerda.
 2. **Editar e Criar Revisões**:
-   - Editar um conteúdo existente e salvar as alterações.
-   - Visualizar as revisões disponíveis na aba "Revisions".
+    - Editar um conteúdo existente e salvar as alterações.
+    - Visualizar as revisões disponíveis na aba "*Revisions*".
 3. **Restaurar Revisões Anteriores**:
-   - Explorar a opção de restaurar versões anteriores do conteúdo.
-   - Utilizar a função "Compare Revisions" para visualizar as diferenças.
+    - Explorar a opção de restaurar versões anteriores do conteúdo.
+    - Utilizar a função "*Compare Revisions*" para visualizar as diferenças.
 
 <details>
 <summary>Exemplos</summary>
@@ -205,103 +198,100 @@ Adicionalmente, é possível personalizar diversas configurações do conteúdo,
 
 </details>
 
-## Drupal CMS com AI
+## Instalar os módulos de suporte de AI
 
-### Como instalar, configurar e usar AI no Drupal
+1. **Ativar a receita "*AI Assistant*"**:
+    - Selecionar "_Choose recommended add-ons_".
+    - Instalar o add-on "*AI Assistant*".
+    - Selecionar o provider OpenAI e adicionar a API key.
+    - Perguntar no chat bot assistant: `What can you do ?`
+2. **Instalar os restantes módulos de suporte**
+    - AI Agents Explorer
+    - AI Agents Extra
+    - AI CKEditor integration
+    - AI Translate
+    - AI Media Image
+    - AI Audio Field
+
+<details>
+<summary>Exemplos</summary>
 
 ![Start](images/AI/1_Start_AI.png){width=60%}
 
-Instalar a receita "AI Assistant"
-
 ![Ai Recipe](images/AI/2_AI_Recipe.png){width=60%}
-
-Seleccionar o provider de AI, e inserir a API Key
 
 ![Config Provider](images/AI/3_Config_Provider.png){width=60%}
 
-Após a instalação, parece em baixo á direita o Chatbox
-
 ![Open Chatbot](images/AI/4_Open_ChatBot.png){width=60%}
-
-Perguntar `What can you do ?` e esperar pela resposta.
 
 ![Talk Chatbot](images/AI/5_Talk_ChatBot.png){width=60%}
 
-Usando as teclas ALT+D, procurar por **AI** e seleccionar AI
-
-![Coffee AI](images/AI/6_Coffee_AI.png){width=60%}
-
-Seleccionar "Provider Settings"
-
-![Conf Page](images/AI/7_AI_Conf_Page.png){width=60%}
-
-Uma lista de AI Porviders. De momento apenas os dois instalados por defeito.
-
-![AI Providers Page](images/AI/8_AI_Providers_Page.png){width=60%}
-
-Usar o "Browse Modules" para procurar outros providers procurando por **AI Provider"
-
-![Extend Search AI Provider](images/AI/9_Extend_Search_AI_Provider.png){width=60%}
-
-Na lista pode-se opcionalmente desinstalar o "Anthropic Provider" pois é instalado por defeito, mas não é usado. Vamos instalar o "Ollama Provider".
-O Ollama permite instalarmos diversos modelos de AI no nosso próprio PC.
-
-![Install AI provider](images/AI/10_Unninstall_Install_AI_Provider.png){width=60%}
-
-De momento a maioria dos módulos de AI no Drupal, estão sem versão estável (alpha ou beta) e por isso têm de ser instalados manualmente, como vamos demonstrar. Os próximos passos já forem executados para este workshop, pelo que são meramente informativos.
-
-![Error Non Stale Realease](images/AI/11_Error_Non_Stable_Release.png){width=60%}
-
-Para fazer a instalação manual, ir a [Drupal.org](www.drupal.org/project/ai_provider_ollama), procurar o módulo e copiar as instruções de instalação.
-
-![Ollama Page](images/AI/12_Ollama_Page.png){width=60%}
-
-Na linha de commandos, na pasta do projeto, executamos o DDEV:
-`ddev composer require 'drupal/ai_provider_ollama:^1.0@beta'`
-
-![DDEV Install AI Provider](images/AI/13_DDEV_Install_AI_Provider_Ollama.png){width=60%}
-
-Configurar o módulo após a instalação.
-
-![Ollama Provider Installation](images/AI/14_Ollama_Provider_Installation.png){width=60%}
-
-Na configuração escrever o endereço (localhost, servidor na rede local, docker ) e a porta.
-
-![Ollama Provider Config](images/AI/15_Ollama_Provider_Config.png){width=60%}
-
-![AI Providers Page](images/AI/16_AI_Providers_Page.png){width=60%}
-
-Ver a lista de AI Agents.
-
-![AI Settings Page](images/AI/17__AI_Settings.png){width=60%}
-
-Por defeito são instalados 3 AI Agents. A AI interpreta o que Os agentes servem como pontes entre o sistema  e o modelo de AI. Ele converte as decisões da AI em comandos válidos para o sistema. Por exemplo, se a AI “decidir” que um campo precisa de ser criado, o agente sabe qual endpoint chamar ou qual função invocar.
-
-![AI Agents Settings Page](images/AI/17_AI_Sgents_Settings_Page.png){width=60%}
-
-Editar os agentes... Mas não recomendo !
-
-![Edit AI Agent](images/AI/18_Edit_AI_Agent.png){width=60%}
-
-Instalar mais 3 AI Agents. Estes ainda são experimentais, mas vão permitir mais algumas acções.
-
 ![AI Agents Installation](images/AI/19_AI_Agents_Installation.png){width=60%}
 
-Usando ALT+D, e procurando por **Agents** vamos aos "AI Agent Settings"
+![Enable AI CKEditor](images/AI/35_Enable_AI_CKEditor.png){width=60%}
+
+![Enable AI Translate](images/AI/36_Enable_AI_Translate.png){width=60%}
+
+![Enable AI Media](images/AI/65_Enable_AI_Media.png){width=60%}
+
+![Enable AI Audio](images/AI/66_Enable_AI_Audio.png){width=60%}
+
+</details>
+
+## Configurar os módulos de suporte de AI
+
+1. **Listar os agentes disponíveis**:
+    - Ativar o Coffee com `Alt + D` (ou atalho correspondente).
+    - Pesquisar por "*AI Agent Settings*" e selecionar a opção.
+    - A lista tem 6 Agents. Pode-se ver a descrição de cada um para saber o que cada um permite fazer. Em alternativa pode-se também perguntar ao chatbot o que cada agent faz.
+2. **Configurar o AI Assistant (Chatbot)**
+    Navegar para "*Configuration*" e depois "*AI*" e depois "*AI Assistants*".
+    - Editar o "*Drupal Agent Assistant*"
+    - Ativar todos os agents que foram instalados previamente.
+3. **Configurar as pre-definições do módulo AI.**
+    - Navegar para "*Configuration*" e depois "*AI*" e depois "*AI Default Settings*".
+    - Em "*Translate text*" definir o "*Chat proxy to LLM*" como "*Default provider*" e definir o "*gpt-4o*" como "*Default model*".
+    - Todas as outra opções suportadas irão pre-definir o OpenAI como default provider.
+4. **Criar os vocabulários de suporte de AI para serem usados no CKEditor.**
+    - Antes de configurar o CKEditor necessita-se de ter 2 vocabulários e respetivos termos criados: "*Languages*" e "*AI Tones*".
+    - Pedir no chat bot para criar um vocabulário "*Languages*" com as 10 línguas mais faladas na Europa. 
+	    - `Generate a taxonomy vocabulary named "Languages" with the 10 most spoken languages of European country's`
+    - Pedir no chat bot para sugerir um Vocabulário para "*AI Tone*":
+	    - `What do you suggest to create a taxonomy vocabulary for "AI Tone"`
+    - Confirmar a criação e pedir para adicionar os termos ***Technical*** e ***Childish***.
+	    - `Yes, and also add the terms Technical and Childish`
+    - Conferir a criação dos dois vocabulários e os seus termos.
+5. **Configurar o CKEditor**
+    - Ativar o Coffee com `Alt + D` (ou atalho correspondente).
+    - Pesquisar por "*Text formats and editors*" e selecionar a opção.
+    - Configurar o formato "*Content*".
+    - Arrastar o Botão de "*AI Ckeditor*" da barra de "*Available buttons*" para a de "*Active toolbar*".
+    - Nas configurações do Plugin AI Tools:
+        - Tone:
+            - Enabled
+            - Choose default vocabulary for tone options: AI Tones
+            - AI provider: gpt-4o
+        - Translate:
+            - Enabled
+            - Choose default vocabulary for translation options: Languages
+            - AI provider: gpt-4o
+        - Generate with AI:
+            - Enabled
+            - AI provider: gpt-4o
+        - Summarize:
+            - Enabled
+            - AI provider: gpt-4o
+
+<details>
+<summary>Exemplos</summary>
 
 ![Return AI Agents Page](images/AI/20_Return_AI_Agents_Page.png){width=60%}
 
-A lista tem agora 6 AI Agents, e podemos ver a descrição de cada um para sabermos o que cada um nos permite fazer.
-
 ![AI Agents Settings](images/AI/21_AI_Agents_Settings.png){width=60%}
-
-Configurar o AI Assistant (Chatbot).
 
 ![AI Assistants](images/AI/22_AI_Assistants.png){width=60%}
 
 ![Edit AI Assistant](images/AI/23_Edit_AI_Assistant.png){width=60%}
-
-Configurar o Chatbot para usar os agentes recém instalados de forma a que a AI tenha acesso ás suas funcionalidades.
 
 ![Select Agents AI](images/AI/24_Select_Agents_AI_Assistant.png){width=60%}
 
@@ -309,256 +299,168 @@ Configurar o Chatbot para usar os agentes recém instalados de forma a que a AI 
 
 ![Return AI Conf](images/AI/26__Return_AI_Conf.png){width=60%}
 
-Configurar um AI Provider por cada tipo de acção, como existe apenas um provider, os defaults funcionam, excepto para "Embeddings" que tem de ser configurado como indicado.
-
-![AI Settings](images/AI/27__Ai_Settings_1.png){width=60%}
-
-Alterar as configurações de "AI Image Alt Text Settings"
-
-![Return AI Conf](images/AI/28__Return_AI_Conf.png){width=60%}
-
-Ativar a opção **Autogenerate on upload**, existe ainda a opção "Hide Button", mas não recomendo porque se não estivermos satisfeito com o Alt Text gerado, temos o botão para voltar a tentar.
-
-![Alt Text Settings](images/AI/29_Alt_Text_Settings.png){width=60%}
-
-Escolher uma de duas opçoes:
-
-1. No menu - Create - Image
-2. No menu - Media - +Add Media
-
-![Add Image](images/AI/30_Add_Image.png){width=60%}
-
-Após fazer upload da imagem deve ser gerado um Alt Text pela AI, se não estivermos satisfeitos com o resultado temos o botão "Generate with AI" para tentar novamente.
-
-![Image AI Alt Text](images/AI/31_Image_AI_Alt_Text.png){width=60%}
-
-Pedir ao Chatbot para instalar um módulo. **Enable AI Image Bulk Text Module**
-
-![Chatbot Install AI Image Bulk](images/AI/32_Chatbot_Install_AI_Image_Bulk_Alt_Text.png){width=60%}
-
-Verificar se foi instalado.
-
-![Extend Confirm Image Bulk](images/AI/33_Extent_Confirm_Image_Bulk.png){width=60%}
-
-Procurando por **Bulk** deve indicar que está instalado. Limpar o histórico do Chatbot.
-
-![Chatbot Clear History](images/AI/34_Chatbot_Clear_History.png){width=60%}
-
-Instalar outros módulos. **AI CKEditor Integration**
-
-![Enable AI CKEditor](images/AI/35_Enable_AI_CKEditor.png){width=60%}
-
-**AI Translate**
-
-![Enable AI Translate](images/AI/36_Enable_AI_Translate.png){width=60%}
-
-Usando **ALt+D** procurar por **Bulk** e seleccionar **Bulk Generate Alt Text AI**
-
-![Coffe AI Image Bulk](images/AI/37_Coffee_AI_Image_Bulk.png){width=60%}
-
-Esta lista está vazia, mas se isto fosse um update de um site existente com centenas ou milhares de imagens sem Alt Text, poderiamos criar Alt Text com AI para todas elas.
-Vamos usar o Chatbox para criar o que em Drupal chamamos **Taxonomias**. São simples listas que podem ser usadas de multiplas formas.
-Vamos pedir no Chatbox, `Generate a Taxonomy with tha language of all European country's`
+![Translate Provider](images/AI/52_Translate_Provider.png){width=60%}
 
 ![AI Image Bulk](images/AI/38_AI_Image_Bulk.png){width=60%}
 
-Precisamos sempre de confirmar, antes da AI fazer algo.
-
 ![Create Taxonomy European languages](images/AI/39_Create_Taxonomy_European_Languages.png){width=60%}
-
-É apresentado um resumo do que foi feito, com um link para pudermos confirmar.
 
 ![Check Taxonomy](images/AI/40_Check_Taxonomy.png){width=60%}
 
-Confirmado ! Taxonomia criada.
-Vamos criar outra, mas de forma um pouco diferente. Perguntar: `What do you suggest to create a toxonomy for "AI Tone"`
-
 ![AI Tone Suggestions](images/AI/41_AI_Tone_Suggestions.png){width=60%}
-
-A AI faz algumas sugestóes, e pedimos para fazer o que sugere, acrescentando os termos **Technical** e **Childish**
 
 ![Create Tone Taxonomy](images/AI/42_Create_Tone_Taxonomy.png){width=60%}
 
-Feito ! Vamos confirmar.
-
 ![Check Tone Taxonomy](images/AI/43_Check_Tone_Taxonomy.png){width=60%}
-
-Imaginem quanto tempo pouparam! Usando **ALT+D**, vamos procurar por **Text** e seleccionar **Text formats and editors**
 
 ![Coffee Text Formats](images/AI/44_Coofee_Text_Formats.png){width=60%}
 
-O Drupal tem integrado o CKEditor, o que nos permite criar e editar conteúdos de texto de forma muito intuitiva. Vamos configurar o CKEditor.
-
 ![Text Formats](images/AI/45_Text_formats.png){width=60%}
-
-Para permitir o uso de AI ao criar / editar conteúdos temos de adicionar o respectivo botão e arrastá-lo da barra de **Available buttons** para a de **Active toolbar**
 
 ![Add AI Button Toolbar](images/AI/46_Add_AI_Button_Toolbar.png){width=60%}
 
-Ao colocar o botão de AI na **Active Toolbar**, aparece uma nova opção no menu abaixo com o nome **AI Tools**. Vamos configurar o **Tone**
-
 ![CKEditor AI Tools](images/AI/47_CKEditor_AI_Tools.png){width=60%}
-
-"AI Tone" refere-se ao estilo, atitude ou "voz" que uma AI adota ao se comunicar.
-Por isso aqui vamos seleccionar a taxonomia que criamos antes **AI Tone**, podemos definir o **Provider** se tivermos mais que um, e ativar em **Enable**
 
 ![AI Tone](images/AI/48_AI_Tone.png){width=60%}
 
-Aqui seleccionamos a taxonomia **European Languages**, selecionamos o **Provider** e ativamos em **Enable**
-
 ![AI Translate](images/AI/49_AI_Translate.png){width=60%}
-
-Em **Generate with AI** seleccionamos o **Provider** e ativamos em **Enable**
-O mesmo em **Summarize** e **Save** no topo direito.
 
 ![AI Generate](images/AI/50_AI_Generate.png){width=60%}
 
-Vamos a "AI Default Settings"
+</details>
 
-![Codde AI Settings](images/AI/51_Coffee_AI_Settings.png){width=60%}
+## Usar AI
 
-Configurar o **Translate Text** com o provider **Chat Proxy to LLM** e modelo **gpt-4o**.
-No menu esquerdo, **Create** - **News Item**
+### Adicionar automaticamente alt text para uma imagem
+- Navegar para "*Media*" e depois "*Add Media*" e depois "*Image*".
+- Fazer o upload de uma imagem.
+- Selecionar "*Generate with AI*".
 
-![Translate Provider](images/AI/52_Translate_Provider.png){width=60%}
+<details>
+<summary>Exemplos</summary>
 
-Na barra do CKEditor seleccionamos o botão do **AI Assistant**, e seleccionamos a opção **Generate with AI**
+![Add Image](images/AI/30_Add_Image.png){width=60%}
+
+![Image AI Alt Text](images/AI/31_Image_AI_Alt_Text.png){width=60%}
+
+</details>
+
+### Gerar texto no CKEditor
+
+- Navegar para "*Create*" e depois "*Content*" e depois "*News*".
+- Na barra do CKEditor, selecionar o botão do "*AI Assistant*" e, em seguida, a opção "*Generate with AI*".
+- Na AI prompt, escrever:
+    - `A text about Dropsolid. It's origin, history, notable developers and the impact on the Drupal community`
+- Concluir clicando em "*Save changes to editor*".
+- Selecionar algum texto e, no botão "*AI Assistant*", a opção "*Summarize*".
+    - Copiar e colar o texto em "*Description*".
+- Selecionar algum texto e, no botão "*Ai Assistant*", a opção "*Tone*".
+- Escolher qualquer tom da lista. Experimentar a opção "*Childish*". Escolher múltiplos tons e verificar o texto clicando em "*Change the tone*".
+- Para concluir, clicar em "*Save changes to editor"*.
+- Mais uma vez, selecionar algum texto, clicar no botão "*Ai Assistant*" e, em seguida, na opção "*Translate*".
+- Escolher um idioma, clicar em "*Translate*" e concluir com "*Save changes to editor*".
+- Escrever um título e clicar em "*Save*".
+
+<details>
+<summary>Exemplos</summary>
 
 ![Ceate News Item](images/AI/53_Create_news_Item.png){width=60%}
 
-Na AI prompt, escrevemos `A text about FEUP, in Porto, Portugal. It's origin, history, famous peoplle and events`
-Sejam sempre especificos. E não se adimirem se tiverem multiplos resultados diferentes de forem clicando em **Generate**.
-O texto gerado não foi verificado, devem sempre fazê-lo para evitar alucinações !!
-Concluir clicando em **Save changes to editor**
-
 ![AI Generate News](images/AI/54_AI_Generate_News.png){width=60%}
-
-Seleccionar algum texto, e no botão **AI Assistant** a opção **Summarize**
 
 ![Text Summarize](images/AI/55_Text_Summarize.png){width=60%}
 
-Clicando no botão **Summarize** será criado um sumário do texto previamente seleccionado.
-Copiar o texto e fechar janela no **X**
-
 ![AI Generate Summary](images/AI/56_AI_Generate_Summary.png){width=60%}
-
-Colar o texto em **Description**.
-Seleccionar algum texto e no botão **Ai Assistant** a opção **Tone**
 
 ![AI Tone](images/AI/57_AI_Tone.png){width=60%}
 
-Escolher qualquer tone da lista. Pessoalmente gosto da opção **Childish** :P
-Escolher multiplos tones e verificar o texto clicando em **Change the tone**, para concluir **Save changes to editor**
-
 ![AI Tone Generation](images/AI/58_AI_Tone_Generation.png){width=60%}
-
-Mais uma vez seleccionando algum texto, botão **Ai Assistant**, opção **Translate**
 
 ![AI Translate](images/AI/59_AI_Translate.png){width=60%}
 
-Podemos escolher um idioma, clicar em "Translate", concluir com **Save changes to editor**
-
 ![AI Translation](images/AI/60_AI_Translation.png){width=60%}
-
-Escrever um título, e clicar em **Save**
 
 ![Title Save](images/AI/61_Title_Save.png){width=60%}
 
-Na barra clicar em **Translate**
+</details>
+
+### Traduzir conteúdo
+
+- Na barra, clicar em "*Translate*".
+- Clicar em "*Translate using gpt-4o*" e aguardar a tradução automática da AI.
+
+<details>
+<summary>Exemplos</summary>
 
 ![Translate Content](images/AI/62_Translate_Content.png){width=60%}
 
-Clicar em **Translate using gpt-4o**, e esperar pela tradução automática da AI
-
 ![AI Translation Option](images/AI/63_AI_Translation_Option.png){width=60%}
-
-Instalar mais alguns modulos.
 
 ![Translated Return Extended](images/AI/64_Translated_Return_Extend.png){width=60%}
 
-Ativar o **AI Media Image**
+</details>
 
-![Enable AI Media](images/AI/65_Enable_AI_Media.png){width=60%}
+### Adicionar uma imagem de AI
 
-Ativar o **AI Audio Field**
+- Editar a notícia.
+- Clicar em "*Add Media*".
+- Na lista "*Image Source*", selecionar "*Generate Image with AI*".
+- Na prompt, escrever
+	- `Image that represents an Open DXP`.
+- Selecionar o modelo, o tamanho da imagem, a qualidade e o estilo.
+- Clicar em "*Generate Image*" e aguardar.
+    - Se a imagem não agradar, clicar novamente em "*Generate Image*" e/ou refinar a prompt.
+- Se a imagem agradar, clicar em "*Save to media Library*".
+- Selecionar a imagem na galeria e clicar em "*Insert Selected*".
+- Gravar a notícia.
 
-![Enable AI Audio](images/AI/66_Enable_AI_Audio.png){width=60%}
-
-No menu esquerdo **Content**, e **Edit** a 'News Item' sobre a FEUP em English
+<details>
+<summary>Exemplos</summary>
 
 ![Content](images/AI/67_Content.png){width=60%}
 
-Clicar em **Add Media**
-
 ![Add Media](images/AI/68_Add_Media.png){width=60%}
-
-Na lista **Image Source** seleccionar **Generate Image with AI**
 
 ![Option Generate Image AI](images/AI/69_Option_Generate_Image_AI.png){width=60%}
 
-Na prompt escrever **University event. Inside. With stands.**
-
 ![AI Image Prompt](images/AI/70_AI_Image_Prompt.png){width=60%}
-
-Seleccionar o modelo, o tamanho da imagem, a qualidade e o estilo.
 
 ![AI Image Options](images/AI/71_AI_Image_Options.png){width=60%}
 
-Clicar em **Generate Image** e esperar.
-Se a imagem não agradar, clicar novamente em **Generate Image**, e / ou refinar o prompt.
-
 ![AI Image Generate](images/AI/72_AI_Image_Generate.png){width=60%}
-
-Se a imagem agradar, clicar em **Save to media Library**
 
 ![Save Image Library](images/AI/73_Save_Image_Library.png){width=60%}
 
-Seleccionar a imagem na galeria, e clicar em **Insert Selected**
-
 ![Image Insert](images/AI/74_Image_Insert.png){width=60%}
-
-Gravar a noticia em **Save (this translation)**
-De notar que após a criação da tradução deste conteúdo, o botão passou de **Save** para **Save (this translation)**
 
 ![Save with Image](images/AI/75_Save_With_Image.png){width=60%}
 
-O Tipo de Conteúdo (Content Type) para noticias já existe, mas vamos usar o Chatbot para criar um campo adicional neste tipo de conteúdo.
-Vamos ser muito especificos e usar o seguinte prompt `Using the AI Audio Field module, create on the News content type, a translatable field called "Transcription"`
+</details>
+### Ativar o text-to-speech
+
+- Pedir ao Drupal agent chatbot para criar um novo campo do tipo "*AI Audio field*" no tipo de conteúdo news.
+    - `Using the AI Audio Field module, create on the News content type, a translatable field called "Transcription"`
+- Editar a notícia.
+- Selecionar algum texto e copiar/colar no campo "*Transcription*".
+- Selecionar um provider, um modelo, um formato de áudio e uma voz.
+- Concluir com "*Generate Audio*".
+- Pode-se repetir os procedimentos da imagem e do áudio para o conteúdo noutro idioma.
+
+<details>
+<summary>Exemplos</summary>
 
 ![Chatbot Ask Create Transcription Field](images/AI/76_Chatbot_Ask_Create_Transcription_Field.png){width=60%}
 
-A AI lista todos os passos a realizar e pede confirmação.
-
 ![Chatbot Create Field](images/AI/77_Chatbot_Create_Field.png){width=60%}
-
-Editar novamente a 'news Item' sobre a FEUP em English.
 
 ![Edit News Audio](images/AI/78_Edit_News_Audio.png){width=60%}
 
-Selecionamos algum texto, e scroll....
-
 ![Audio Select Text](images/AI/79_Audio_Select_Text.png){width=60%}
-
-Abaixo de **Transcription**, colamos o texto no campo **Text**
-Selecionamos um provider, um modelo, um formato de audio, e uma voz. Concluir com **Generate Audio**
 
 ![Generate Transcription Audio](images/AI/80_Generate_Transcription_Audio.png){width=60%}
 
-Ouvir o resultado clicando em play. Fantástico !!
-Na barra lateral mudamos o estado de **Draft** para **Published** e no topo **Save (this translation)**
-
 ![Audio Generated](images/AI/81_Audio_Generated.png){width=60%}
-
-Podemos repetir os procedimentos da imagem e do audio para o conteúdo noutro idioma.
-Ver os resultados, clicando no topo esquerdo em **Back to Site**
 
 ![Back to Site](images/AI/82_Back_To_Site.png){width=60%}
 
-Notícia em ENG, com texto, imagem e ficheiro audio.
-Clicar no menu de idioma.
-
-![News EN](images/AI/83_News_EN.png){width=60%}
-
-Notícia com imagem, e o texto e ficheiro de audio em PT.
-
-![News PT](images/AI/84_News_PT.png){width=60%}
+</details>
