@@ -110,7 +110,7 @@ O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer pági
 
 </details>
 
-## Criar Conteúdo
+## Criar Conteúdo (Opcional)
 
 1. **Criar Notícias, Entradas de Blog e Eventos**:
     - Navegar nas listagens de notícias, blog e eventos.
@@ -137,7 +137,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 
 </details>
 
-## Traduzir conteúdo
+## Traduzir conteúdo (Opcional)
 
 - Editar uma das páginas criadas anteriormente.
     - Se traduzir a homepage, editar e re-gravar a versão inglesa (existe um bug no Drupal em que só é possível traduzir conteúdo criado antes da ativação das traduções quando o conteúdo original é regravado)
@@ -174,7 +174,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 
 </details>
 
-## Gerir Revisões de Conteúdo
+## Gerir Revisões de Conteúdo (Opcional)
 
 1. **Aceder à Lista de Conteúdo**:
     - Navegar para a secção "*Content*" na barra lateral esquerda.

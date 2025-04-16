@@ -115,7 +115,7 @@ The Coffee Module comes pre-installed and allows quick access to any administrat
 
 </details>
 
-## Create Content
+## Create Content (Optional)
 
 1.  **Create News, Blog Posts, and Events**:
     - Navigate through the news, blog, and event listings.
@@ -144,7 +144,7 @@ By default, when creating new content, a revision is automatically generated. Th
 
 </details>
 
-## Translate Content
+## Translate Content (Optional)
 
 - Edit one of the pages created earlier.
     - If translating the homepage, edit and re-save the English version (there is a bug in Drupal where it is only possible to translate content created before the activation of translations when the original content is re-saved).
@@ -183,7 +183,7 @@ By default, when creating new content, a revision is automatically generated. Th
 
 </details>
 
-## Manage Content Revisions
+## Manage Content Revisions (Optional)
 
 1.  **Access the Content List**:
     - Navigate to the "*Content*" section in the left sidebar.
