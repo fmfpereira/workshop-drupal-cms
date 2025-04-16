@@ -211,18 +211,20 @@ By default, when creating new content, a revision is automatically generated. Th
 ## Install AI Support Modules
 
 1.  **Activate the "*AI Assistant*" Recipe**:
+    - Nativate to "*Dashboard*"
     - Select "_Choose recommended add-ons_".
     - Install the "*AI Assistant*" add-on.
     - Select the OpenAI provider and add the API key.
     - Ask the chatbot assistant: `What can you do ?`
 2.  **Install the Remaining Support Modules**
-    - AI Agents Explorer
-    - AI Agents Extra
-    - AI Agents Form Integration
-    - AI CKEditor integration
-    - AI Translate
-    - AI Media Image
-    - AI Audio Field
+    - Navigate to "*Extend*" and then "*List*" and enable the following modules:
+	    - AI CKEditor integration
+	    - AI Translate
+	    - AI Agents Explorer
+	    - AI Agents Extra
+	    - AI Agents Form Integration
+	    - AI Audio Field
+	    - AI Media Image
 
 <details>
 
@@ -257,7 +259,7 @@ By default, when creating new content, a revision is automatically generated. Th
     - Search for "*AI Agent Settings*" and select the option.
     - The list has 6 Agents. You can see the description of each one to know what each one allows you to do. Alternatively, you can also ask the chatbot what each agent does.
 2.  **Configure the AI Assistant (Chatbot)**
-    Navigate to "*Configuration*" and then "*AI*" and then "*AI Assistants*".
+    - Navigate to "*Configuration*" and then "*AI*" and then "*AI Assistants*".
     - Edit the "*Drupal Agent Assistant*"
     - Activate all the agents that were previously installed.
 3.  **Configure the AI Module Defaults.**

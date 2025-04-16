@@ -201,18 +201,20 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 ## Instalar os módulos de suporte de AI
 
 1. **Ativar a receita "*AI Assistant*"**:
+    - Navegar para "*Dashboard*.
     - Selecionar "_Choose recommended add-ons_".
     - Instalar o add-on "*AI Assistant*".
     - Selecionar o provider OpenAI e adicionar a API key.
     - Perguntar no chat bot assistant: `What can you do ?`
 2. **Instalar os restantes módulos de suporte**
-    - AI Agents Explorer
-    - AI Agents Extra
-    - AI Agents Form Integration
-    - AI CKEditor integration
-    - AI Translate
-    - AI Media Image
-    - AI Audio Field
+    - Navegar para "_Extend_" e depois "_List_" e instalar os seguintes módulos:
+	    - AI CKEditor integration
+	    - AI Translate
+	    - AI Agents Explorer
+	    - AI Agents Extra
+	    - AI Agents Form Integration
+	    - AI Audio Field
+	    - AI Media Image
 
 <details>
 <summary>Exemplos</summary>
@@ -246,7 +248,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
     - Pesquisar por "*AI Agent Settings*" e selecionar a opção.
     - A lista tem 6 Agents. Pode-se ver a descrição de cada um para saber o que cada um permite fazer. Em alternativa pode-se também perguntar ao chatbot o que cada agent faz.
 2. **Configurar o AI Assistant (Chatbot)**
-    Navegar para "*Configuration*" e depois "*AI*" e depois "*AI Assistants*".
+    - Navegar para "*Configuration*" e depois "*AI*" e depois "*AI Assistants*".
     - Editar o "*Drupal Agent Assistant*"
     - Ativar todos os agents que foram instalados previamente.
 3. **Configurar as pre-definições do módulo AI.**
