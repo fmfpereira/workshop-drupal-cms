@@ -436,6 +436,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 ![Save with Image](images/AI/75_Save_With_Image.png){width=60%}
 
 </details>
+
 ### Ativar o text-to-speech
 
 - Pedir ao Drupal agent chatbot para criar um novo campo do tipo "*AI Audio field*" no tipo de conteúdo news.
