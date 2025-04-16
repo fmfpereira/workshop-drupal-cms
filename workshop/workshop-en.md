@@ -267,7 +267,7 @@ By default, when creating new content, a revision is automatically generated. Th
 4.  **Create the AI Support Vocabularies to be Used in CKEditor.**
     - Before configuring the CKEditor, you need to have 2 vocabularies and their respective terms created: "*Languages*" and "*AI Tones*".
     - Ask the chatbot to create a "*Languages*" vocabulary with the 10 most spoken languages in Europe.
-        - `Generate a taxonomy vocabulary named "Languages" with the 10 most spoken languages of European country's`
+        - `Generate a taxonomy vocabulary named "Languages" with the 20 most spoken languages of European country's`
     - Ask the chatbot to suggest a Vocabulary for "*AI Tone*":
         - `What do you suggest to create a taxonomy vocabulary for "AI Tone"`
     - Confirm the creation and ask to add the terms ***Technical*** and ***Childish***.
@@ -362,7 +362,7 @@ By default, when creating new content, a revision is automatically generated. Th
 
 ### Generate text in CKEditor
 
-- Navigate to "*Create*" and then "*Content*" and then "*News*".
+- Navigate to "*Create*" and then "*News item*".
 - In the CKEditor toolbar, select the "*AI Assistant*" button and then the "*Generate with AI*" option.
 - In the AI prompt, write:
     - `A text about Dropsolid. It's origin, history, notable developers and the impact on the Drupal community`
