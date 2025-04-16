@@ -211,7 +211,7 @@ By default, when creating new content, a revision is automatically generated. Th
 ## Install AI Support Modules
 
 1.  **Activate the "*AI Assistant*" Recipe**:
-    - Nativate to "*Dashboard*"
+    - Navigate to "*Dashboard*"
     - Select "_Choose recommended add-ons_".
     - Install the "*AI Assistant*" add-on.
     - Select the OpenAI provider and add the API key.
