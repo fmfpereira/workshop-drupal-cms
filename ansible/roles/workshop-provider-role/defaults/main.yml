@@ -1,0 +1,12 @@
+---
+#    ___      ___                 _         
+#   / _/_ _  / _/__  ___ _______ (_)______ _
+#  / _/  ' \/ _/ _ \/ -_) __/ -_) / __/ _ `/
+# /_//_/_/_/_// .__/\__/_/  \__/_/_/  \_,_/ 
+#            /_/         
+# workshop provider vars
+
+workshop_root: '~/workshops'
+workshop_source_tarball: 'https://gitlab.com/fmfpereira/workshop-drupal-cms/-/archive/draft/workshop-drupal-cms-draft.tar.gz'
+ddev_instance_count: 10
+workshop_base_domain: workshops.fmfpereira.dev
