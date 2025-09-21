@@ -82,8 +82,8 @@ O Módulo Coffee já vem instalado e permite aceder rapidamente a qualquer pági
     - Navegar para "_Structure_" e depois "_Block layout_".
     - Adicionar o bloco "_Language switcher_" à região desejada (ex. Content above)
 4. **Configurar o Módulo Content Translation**:
-    - Navegar para "_Configuration_" e depois "_Regional and Language_" e depois "_Content Language and Translation_".
-    - Selecionar "_Content_", selecionar todos os tipos de conteúdo, definir como "*Translatable*" e ativar a opção "*Show language selector*".
+    - Navegar para "_Configuration_" e depois "_Region and Language_" e depois "_Content Language and Translation_".
+    - Selecionar "_Content_", selecionar todos os tipos de conteúdo, gravar em "_Save configuration"_.
 
 <details>
 <summary>Exemplos</summary>
@@ -208,6 +208,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
     - Perguntar no chat bot assistant: `What can you do ?`
 2. **Instalar os restantes módulos de suporte**
     - Navegar para "_Extend_" e depois "_List_" e instalar os seguintes módulos:
+        - Ollama Provider
 	    - AI CKEditor integration
 	    - AI Translate
 	    - AI Agents Explorer
@@ -215,6 +216,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 	    - AI Agents Form Integration
 	    - AI Audio Field
 	    - AI Media Image
+        - AI Image Bulk Alt Text
 
 <details>
 <summary>Exemplos</summary>
@@ -246,7 +248,7 @@ Por defeito, ao criar um novo conteúdo, é gerada automaticamente uma revisão.
 1. **Listar os agentes disponíveis**:
     - Ativar o Coffee com `Alt + D` (ou atalho correspondente).
     - Pesquisar por "*AI Agent Settings*" e selecionar a opção.
-    - A lista tem 6 Agents. Pode-se ver a descrição de cada um para saber o que cada um permite fazer. Em alternativa pode-se também perguntar ao chatbot o que cada agent faz.
+    - A lista tem 10 agentes. Pode-se ver a descrição de cada um para saber o que cada um permite fazer. Em alternativa pode-se também perguntar ao chatbot o que cada agente faz.
 2. **Configurar o AI Assistant (Chatbot)**
     - Navegar para "*Configuration*" e depois "*AI*" e depois "*AI Assistants*".
     - Editar o "*Drupal Agent Assistant*"
