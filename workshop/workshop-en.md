@@ -225,6 +225,7 @@ By default, when creating new content, a revision is automatically generated. Th
 	    - AI Agents Form Integration
 	    - AI Audio Field
 	    - AI Media Image
+	    - Ollama Provider
 
 <details>
 
@@ -257,7 +258,7 @@ By default, when creating new content, a revision is automatically generated. Th
 1.  **List the Available Agents**:
     - Activate Coffee with `Alt + D` (or the corresponding shortcut).
     - Search for "*AI Agent Settings*" and select the option.
-    - The list has 6 Agents. You can see the description of each one to know what each one allows you to do. Alternatively, you can also ask the chatbot what each agent does.
+    - The list has 10 Agents. You can see the description of each one to know what each one allows you to do. Alternatively, you can also ask the chatbot what each agent does.
 2.  **Configure the AI Assistant (Chatbot)**
     - Navigate to "*Configuration*" and then "*AI*" and then "*AI Assistants*".
     - Edit the "*Drupal Agent Assistant*"
@@ -281,17 +282,24 @@ By default, when creating new content, a revision is automatically generated. Th
     - Configure the "*Content*" format.
     - Drag the "*AI Ckeditor*" button from the "*Available buttons*" bar to the "*Active toolbar*".
     - In the AI Tools Plugin settings:
+  
         - Tone:
             - Enabled
             - Choose default vocabulary for tone options: AI Tones
             - AI provider: gpt-4o
+
+        - Fix spelling
+            - Enabled
+
         - Translate:
             - Enabled
             - Choose default vocabulary for translation options: Languages
             - AI provider: gpt-4o
+
         - Generate with AI:
             - Enabled
             - AI provider: gpt-4o
+
         - Summarize:
             - Enabled
             - AI provider: gpt-4o
@@ -372,11 +380,14 @@ By default, when creating new content, a revision is automatically generated. Th
 - Select some text and, in the "*AI Assistant*" button, the "*Summarize*" option.
     - Copy and paste the text into "*Description*".
 - Select some text and, in the "*Ai Assistant*" button, the "*Tone*" option.
-- Choose any tone from the list. Try the "*Childish*" option. Choose multiple tones and check the text by clicking "*Change the tone*".
-- To finish, click "*Save changes to editor*".
+    - Choose any tone from the list. Try the "*Childish*" option. Choose multiple tones and check the text by clicking "*Change the tone*".
+    - To finish, click "*Save changes to editor*".
 - Once again, select some text, click the "*Ai Assistant*" button and then the "*Translate*" option.
-- Choose a language, click "*Translate*" and finish with "*Save changes to editor*".
-- Write a title and click "*Save*".
+    - Choose a language, click "*Translate*" and finish with "*Save changes to editor*".
+    - Write a title and click "*Save*".
+- For fixing spell, add some erros by delete some letter on a few words, and select the text.
+    - Click the "Ai Assistant" and choose "Fix spelling"
+    - Click "Fix spelling" and "Save changes to editor"
 
 <details>
 
@@ -404,8 +415,8 @@ By default, when creating new content, a revision is automatically generated. Th
 
 ### Translate content
 
-- In the toolbar, click "*Translate*".
-- Click "*Translate using gpt-4o*" and wait for the AI's automatic translation.
+- In the top right, on the side of the "Edit" button, click the 3 dots and then "*Translate*".
+- Click "*Translate using gpt-4o*", wait for the AI's automatic translation, and check the results.
 
 <details>
 
