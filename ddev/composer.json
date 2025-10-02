@@ -17,10 +17,9 @@
     },
     "require": {
         "composer/installers": "^2.3",
-        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.5",
-        "drupal/ai_audio_field": "^1.0@RC",
-        "drupal/ai_drush_agents": "1.0.x-dev@dev",
+        "drupal/ai_audio_field": "^1.0.x-dev",
+        "drupal/ai_drush_agents": "^1.0.x-dev",
         "drupal/ai_media_image": "^1.0@alpha",
         "drupal/ai_provider_ollama": "^1.1@beta",
         "drupal/ai_summarize_document": "^1.1",
@@ -29,7 +28,7 @@
         "drupal/core-composer-scaffold": "^11.1.4",
         "drupal/core-project-message": "^11.1.4",
         "drupal/core-recommended": "^11.1.4",
-        "drupal/diff": "^1.9",
+        "drupal/diff": "1.8",
         "drupal/drupal_cms_ai": "^1.2",
         "drupal/drupal_cms_blog": "^1.2",
         "drupal/drupal_cms_case_study": "^1.2",
@@ -37,12 +36,13 @@
         "drupal/drupal_cms_forms": "^1.2",
         "drupal/drupal_cms_google_analytics": "^1.2",
         "drupal/drupal_cms_news": "^1.2",
+        "drupal/drupal_cms_olivero": "^1.2.5",
         "drupal/drupal_cms_page": "^1.2",
         "drupal/drupal_cms_person": "^1.2",
         "drupal/drupal_cms_project": "^1.2",
         "drupal/drupal_cms_search": "^1.2",
-        "drupal/drupal_cms_starter": "^1.2",
-        "drupal/mcp": "^1.2@alpha",
+        "drupal/drupal_cms_starter": "^1.2.6",
+        "drupal/mcp": "1.2.1-alpha2",
         "drupal/project_browser": "@beta",
         "drupal/recipe_installer_kit": "^1-alpha3@alpha",
         "drupal/webform": "@beta",
@@ -51,12 +51,11 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "php-http/discovery": true
@@ -94,16 +93,6 @@
                 "  * Get support: https://drupal.org/support",
                 "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
             ]
-        },
-        "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
-        "enable-patching": true,
-        "patches": {
-            "drupal/ai_audio_field": {
-                "https://drupal.org/i/3517231 - Not possible to add/manage field on layout builder or standard field ui": "patches/drupal/ai_audio_field/ai_audio_field-formatter-missing-3517231-4.patch"
-            }
         }
     }
 }
