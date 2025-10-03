@@ -338,17 +338,17 @@ By default, when creating new content, a revision is automatically generated. Th
 
 ![AI General](images/AI/25_AI_General.png){width=60%}
 
-![AI Chatbot Conf](images/AI/85_block_layout.png{width=60%}
+![AI Chatbot Conf](images/AI/85_block_layout.png){width=60%}
 
-![AI Chatbot Conf](images/AI/86_block_layout_add_chatbot_settings.png{width=60%}
+![AI Chatbot Conf](images/AI/86_block_layout_add_chatbot_settings.png){width=60%}
 
-![AI Chatbot Conf](images/AI/87_chatbot_block_config.png{width=60%}
+![AI Chatbot Conf](images/AI/87_chatbot_block_config.png){width=60%}
 
-![AI Chatbot Conf](images/AI/88_block_layout_admin_theme.png{width=60%}
+![AI Chatbot Conf](images/AI/88_block_layout_admin_theme.png){width=60%}
 
-![AI Chatbot Conf](images/AI/89_block_layout_edit_chatbot_settings.png{width=60%}
+![AI Chatbot Conf](images/AI/89_block_layout_edit_chatbot_settings.png){width=60%}
 
-![AI Chatbot Conf](images/AI/90_chatbot_block_config.png{width=60%}
+![AI Chatbot Conf](images/AI/90_chatbot_block_config.png){width=60%}
 
 ![Translate Provider](images/AI/52_Translate_Provider.png){width=60%}
 
