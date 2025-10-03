@@ -338,7 +338,17 @@ By default, when creating new content, a revision is automatically generated. Th
 
 ![AI General](images/AI/25_AI_General.png){width=60%}
 
-![Return AI Conf](images/AI/26__Return_AI_Conf.png){width=60%}
+![AI Chatbot Conf](images/AI/85_block_layout.png{width=60%}
+
+![AI Chatbot Conf](images/AI/86_block_layout_add_chatbot_settings.png{width=60%}
+
+![AI Chatbot Conf](images/AI/87_chatbot_block_config.png{width=60%}
+
+![AI Chatbot Conf](images/AI/88_block_layout_admin_theme.png{width=60%}
+
+![AI Chatbot Conf](images/AI/89_block_layout_edit_chatbot_settings.png{width=60%}
+
+![AI Chatbot Conf](images/AI/90_chatbot_block_config.png{width=60%}
 
 ![Translate Provider](images/AI/52_Translate_Provider.png){width=60%}
 
@@ -393,7 +403,7 @@ By default, when creating new content, a revision is automatically generated. Th
 - Navigate to "*Create*" and then "*News item*".
 - In the CKEditor toolbar, select the "*AI Assistant*" button and then the "*Generate with AI*" option.
 - In the AI prompt, write:
-    - `A text about Dropsolid. It's origin, history, notable developers and the impact on the Drupal community`
+    - `A text about Festa do Software Livre: its origin, history, and notable communities`.
 - Finish by clicking "*Save changes to editor*".
 - Select some text and, in the "*AI Assistant*" button, the "*Summarize*" option.
     - Copy and paste the text into "*Description*".
@@ -440,11 +450,7 @@ By default, when creating new content, a revision is automatically generated. Th
 
 <summary>Examples</summary>
 
-![Translate Content](images/AI/62_Translate_Content.png){width=60%}
-
 ![AI Translation Option](images/AI/63_AI_Translation_Option.png){width=60%}
-
-![Translated Return Extended](images/AI/64_Translated_Return_Extend.png){width=60%}
 
 </details>
 
@@ -454,7 +460,7 @@ By default, when creating new content, a revision is automatically generated. Th
 - Click "*Add Media*".
 - In the "*Image Source*" list, select "*Generate Image with AI*".
 - In the prompt, write
-    - `Image that represents an Open DXP`.
+    - `An image of the Douro River and its iconic bridges`.
 - Select the model, the image size, the quality, and the style.
 - Click "*Generate Image*" and wait.
     - If you don't like the image, click "*Generate Image*" again and/or refine the prompt.
