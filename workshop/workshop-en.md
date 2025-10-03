@@ -1,6 +1,10 @@
 # DrupalCMS and AI Workshop
 
-## Prepare the Local Development Environment
+## Prepare the Local Development Environment (Optional)
+
+<details>
+
+<summary>Details</summary>
 
 ### Install and Configure DDEV
 
@@ -16,6 +20,8 @@ DDEV simplifies the setup of development environments for web projects. For this
 - Start DDEV: `ddev start`
 - Install dependencies: `ddev composer install`
 - Access the Drupal website via: [https://drupalcms.ddev.site](https://drupalcms.ddev.site "null")
+
+</details>
 
 ## Install Drupal CMS
 
