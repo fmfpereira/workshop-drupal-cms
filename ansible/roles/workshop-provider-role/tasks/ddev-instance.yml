@@ -1,0 +1,43 @@
+---
+#    ___      ___                 _         
+#   / _/_ _  / _/__  ___ _______ (_)______ _
+#  / _/  ' \/ _/ _ \/ -_) __/ -_) / __/ _ `/
+# /_//_/_/_/_// .__/\__/_/  \__/_/_/  \_,_/ 
+#            /_/         
+# Workshop DDEV instance provisioning task
+
+- name: Define paths for DDEV instance {{ item }}
+  set_fact:
+    ddev_instances_path: '{{ workshop_path }}/ddev-instances'
+    ddev_current_instance_path: '{{ workshop_path }}/ddev-instances/ddev-{{ item }}'
+
+- name: Ensure DDEV instances root directory exists
+  ansible.builtin.file:
+    path: '{{ ddev_instances_path }}'
+    state: directory
+    mode: '0755'
+
+- name: Copy DDEV template to instance {{ item }}
+  ansible.builtin.copy:
+    src: '{{ ddev_template_path }}/'
+    dest: '{{ ddev_current_instance_path }}/'
+    remote_src: yes
+
+- name: Set unique project name for DDEV instance {{ item }}
+  ansible.builtin.replace:
+    path: '{{ ddev_current_instance_path }}/.ddev/config.yaml'
+    regexp: 'name: drupalcms'
+    replace: 'name: drupalcms-{{ item }}'
+
+- name: Set domain and host for DDEV instance {{ item }}
+  ansible.builtin.copy:
+    dest: '{{ ddev_current_instance_path }}/.ddev/config.prod.yaml'
+    content: |
+      project_tld: {{ workshop_base_domain }}
+      additional_hostnames:
+        - drupalcms-{{ item }}
+
+- name: Start DDEV instance {{ item }}
+  ansible.builtin.command: ddev start
+  args:
+    chdir: '{{ ddev_current_instance_path }}'

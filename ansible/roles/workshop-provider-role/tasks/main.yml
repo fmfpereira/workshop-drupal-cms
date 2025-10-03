@@ -1,0 +1,51 @@
+---
+#    ___      ___                 _         
+#   / _/_ _  / _/__  ___ _______ (_)______ _
+#  / _/  ' \/ _/ _ \/ -_) __/ -_) / __/ _ `/
+# /_//_/_/_/_// .__/\__/_/  \__/_/_/  \_,_/ 
+#            /_/         
+# Workshop provider task.
+
+- name: Define internal paths for workshop setup
+  set_fact:
+    workshop_path: '{{ workshop_root }}/workshop-drupal-cms'
+    ddev_template_path: '{{ workshop_root }}/workshop-drupal-cms/ddev'
+    ddev_template_config_path: '{{ workshop_root }}/workshop-drupal-cms/ddev/.ddev/config.yaml'
+
+- name: Ensure workshop directory exists
+  ansible.builtin.file:
+    path: '{{ workshop_path }}'
+    state: directory
+    mode: '0755'
+
+- name: Download workshop tarball to server
+  ansible.builtin.get_url:
+    url: '{{ workshop_source_tarball }}'
+    dest: '{{ workshop_root }}/workshop-drupal-cms.tar.gz'
+    mode: 0755
+
+- name: Extract workshop tarball into target directory
+  ansible.builtin.unarchive:
+    src: '{{ workshop_root }}/workshop-drupal-cms.tar.gz'
+    dest: '{{ workshop_path }}'
+    extra_opts: ['--strip-components=1', '--show-stored-names']
+    remote_src: yes
+
+- name: Start DDEV environment for template project
+  ansible.builtin.command: ddev start
+  args:
+    chdir: '{{ ddev_template_path }}'
+
+- name: Install project dependencies using Composer
+  ansible.builtin.command: ddev composer install
+  args:
+    chdir: '{{ ddev_template_path }}'
+
+- name: Stop DDEV environment for template project
+  ansible.builtin.command: ddev stop
+  args:
+    chdir: '{{ ddev_template_path }}'
+
+- name: Provision individual DDEV instances
+  include_tasks: ddev-instance.yml
+  with_sequence: count={{ ddev_instance_count }}

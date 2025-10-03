@@ -1,0 +1,44 @@
+---
+#    ___      ___                 _         
+#   / _/_ _  / _/__  ___ _______ (_)______ _
+#  / _/  ' \/ _/ _ \/ -_) __/ -_) / __/ _ `/
+# /_//_/_/_/_// .__/\__/_/  \__/_/_/  \_,_/ 
+#            /_/         
+# workshop provider playbook.
+#
+# Assumes Docker and DDEV are already configured on the target host.
+
+# Set dynamic host
+- hosts: localhost
+  gather_facts: no
+  vars_prompt:
+    - name: target_host
+      prompt: Please enter the target host/IP
+      private: no
+  tasks:
+    - add_host:
+        name: "{{ target_host }}"
+        groups: dynamically_created_hosts
+
+# workshop provider playbook
+- name: Setup dddev workshop instances
+  hosts: dynamically_created_hosts
+  roles:
+    - workshop-provider-role
+  vars_prompt:
+    - name: workshop_root
+      prompt: 'Enter the absolute path on the server where the project should be installed'
+      private: no
+      default: '{{ workshop_root }}'
+    - name: workshop_source_tarball
+      prompt: 'Enter the url to the workshop tarball (.tar.gz) containing the source code'
+      private: no
+      default: '{{ workshop_source_tarball }}'
+    - name: ddev_instance_count
+      prompt: 'How many DDEV instances would you like to set up?'
+      private: no
+      default: '{{ ddev_instance_count }}'
+    - name: workshop_base_domain
+      prompt: 'Enter the base domain for the workshop (e.g., workshop.example.com)'
+      private: no
+      default: '{{ workshop_base_domain }}'
