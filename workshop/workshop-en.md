@@ -51,11 +51,11 @@ DDEV simplifies the setup of development environments for web projects. For this
 2.  **Install Recommended Add-ons**:
     - Select "_Choose recommended add-ons_".
     - Install the following add-ons:
+	    - Blog
         - Events
-        - News
         - Forms
+        - News
         - Search
-        - Blog
 3.  **View New Content**:
     - In the Dashboard, explore the new listings and content entries: blogs, news, events, and contact form.
 
