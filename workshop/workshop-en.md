@@ -222,7 +222,25 @@ By default, when creating new content, a revision is automatically generated. Th
     - Install the "*AI Assistant*" add-on.
     - Select the OpenAI provider and add the API key.
     - Ask the chatbot assistant: `What can you do ?`
-2.  **Install the Remaining Support Modules**
+2. **Add and configure the AI Assistant (Chatbot) block for the default theme**
+    - Navigate to "_Structure_" and then "_Block layout_".
+    - Add the "_AI DeepChat Chatbot_" block to the Content region.
+    - Select "_Drupal CMS Assistant_" as the "_AI Assistant_".
+    - On the "_Styling settings_" select the following options:
+	    - "_Width_": _400_ 
+	    -  "_Height_": _400_ 
+	    - "_Placement_": _Bottom right_ 
+	- Save
+3. **Configure the AI Assistant (Chatbot) block for the admin theme**
+    - Navigate to "_Structure_" and then "_Block layout_".
+    - Select the "_Gin_" theme.
+    - Edit the "_Drupal Agent Chatbot_" block on the Content region.
+    - On the "_Styling settings_" select the following options:
+	    - "_Width_": _400_ 
+	    -  "_Height_": _400_ 
+	    - "_Placement_": _Bottom right_ 
+	- Save
+4.  **Install the Remaining Support Modules**
     - Navigate to "*Extend*" and then "*List*" and enable the following modules:
 	    - AI CKEditor integration
 	    - AI Translate
@@ -268,29 +286,11 @@ By default, when creating new content, a revision is automatically generated. Th
     - Navigate to "*Configuration*" and then "*AI*" and then "*AI Assistants*".
     - Edit the "*Drupal Agent Assistant*"
     - Activate all the agents that were previously installed.
-3. **Add and configure the AI Assistant (Chatbot) block for the default theme**
-    - Navigate to "_Structure_" and then "_Block layout_".
-    - Add the "_AI DeepChat Chatbot_" block to the Content region.
-    - Select "_Drupal CMS Assistant_" as the "_AI Assistant_".
-    - On the "_Styling settings_" select the following options:
-	    - "_Width_": _400_ 
-	    -  "_Height_": _400_ 
-	    - "_Placement_": _Bottom right_ 
-	- Save
-4. **Configure the AI Assistant (Chatbot) block for the admin theme**
-    - Navigate to "_Structure_" and then "_Block layout_".
-    - Select the "_Gin_" theme.
-    - Edit the "_Drupal Agent Chatbot_" block on the Content region.
-    - On the "_Styling settings_" select the following options:
-	    - "_Width_": _400_ 
-	    -  "_Height_": _400_ 
-	    - "_Placement_": _Bottom right_ 
-	- Save
-5.  **Configure the AI Module Defaults.**
+3.  **Configure the AI Module Defaults.**
     - Navigate to "*Configuration*" and then "*AI*" and then "*AI Default Settings*".
     - In "*Translate text*" set the "*Chat proxy to LLM*" to "*Default provider*" and set "*gpt-4o*" as the "*Default model*".
     - All other supported options will default to OpenAI as the default provider.
-6.  **Create the AI Support Vocabularies to be Used in CKEditor.**
+4.  **Create the AI Support Vocabularies to be Used in CKEditor.**
     - Before configuring the CKEditor, you need to have 2 vocabularies and their respective terms created: "*Languages*" and "*AI Tones*".
     - Ask the chatbot to create a "*Languages*" vocabulary with the 10 most spoken languages in Europe.
         - `Generate a taxonomy vocabulary named "Languages" with the 20 most spoken languages of European country's`
@@ -299,7 +299,7 @@ By default, when creating new content, a revision is automatically generated. Th
     - Confirm the creation and ask to add the terms ***Technical*** and ***Childish***.
         - `Yes, and also add the terms Technical and Childish`
     - Check the creation of the two vocabularies and their terms.
-7.  **Configure the CKEditor**
+5.  **Configure the CKEditor**
     - Activate Coffee with `Alt + D` (or the corresponding shortcut).
     - Search for "*Text formats and editors*" and select the option.
     - Configure the "*Content*" format.
