@@ -28,8 +28,8 @@ DDEV simplifies the setup of development environments for web projects. For this
 1.  **Access the Drupal website**
     - When visiting the website for the first time, the user will be redirected to the Drupal installation page.
 2.  **Configure the Installation**:
-    - Select the blog functionality.
     - Define the website name.
+    - Choose "Blank" Template
     - Create a user and define a secure password.
         - The first user to register will automatically be designated as the site's super administrator.
     - Wait for the installation to complete.
@@ -38,9 +38,9 @@ DDEV simplifies the setup of development environments for web projects. For this
 
 <summary>Examples</summary>
 
-![Drupal CMS installation screen](images/install.jpg){width=60%}
+![Drupal CMS installation screen](images/AI/1_2026_Drupal_Iberia_Braga.png){width=60%}
 
-![Drupal CMS installation in progress.](images/install-running.jpg){width=60%}
+![Drupal CMS Choosing a Template.](images/AI/2_2026_Drupal_Iberia_Braga.png){width=60%}
 
 </details>
 
@@ -51,24 +51,22 @@ DDEV simplifies the setup of development environments for web projects. For this
 2.  **Install Recommended Add-ons**:
     - Select "_Choose recommended add-ons_".
     - Install the following add-ons:
-	    - Blog
-        - Events
+        - Article content type
         - Forms
-        - News
         - Search
-3.  **View New Content**:
-    - In the Dashboard, explore the new listings and content entries: blogs, news, events, and contact form.
+        - Standard Responsive Images
+3.  **Change Default Template**:
+    - Select on the left menu "Appearance", then on Olivero "Set as default"
 
 <details>
 
 <summary>Examples</summary>
 
-![Drupal CMS Dashboard](images/dashboard-install-add-ons.jpg){width=60%}
+![Drupal CMS Dashboard](images/AI/3_2026_Drupal_Iberia_Braga.png){width=60%}
 
-![Installing add-ons](images/recipes-install.jpg){width=60%}
+![Installing add-ons](images/AI/4_2026_Drupal_Iberia_Braga.png){width=60%}
 
-![Overview of recent content in the Drupal CMS Dashboard](images/dashboard-recent-content.jpg){width=60%}
-
+![Changing Template](images/AI/5_2026_Drupal_Iberia_Braga.png){with=60%}
 </details>
 
 ## Install and Activate Multilingual Support
@@ -115,7 +113,7 @@ The Coffee Module comes pre-installed and allows quick access to any administrat
 
 ![Link to the content translation module configuration](images/configure-content-translation-link.jpg){width=60%}
 
-![Configure translation by content type](images/enable-content-translation-options-content-type.jpg){width=60%}
+![Configure translation by content type](images/AI/6_2026_Drupal_Iberia_Braga.png){width=60%}
 
 ![Change the homepage language](images/homepage-select-language.jpg){width=60%}
 
@@ -123,16 +121,15 @@ The Coffee Module comes pre-installed and allows quick access to any administrat
 
 ## Create Content (Optional)
 
-1.  **Create News, Blog Posts, and Events**:
-    - Navigate through the news, blog, and event listings.
-    - Create new content.
+1.  **Create Article**:
+    - Navigate through the create listings.
+    - Create new article.
 2.  **Manage Content Options**:
     - Observe the publishing, scheduling, SEO, and authorship options.
 
 By default, when creating new content, a revision is automatically generated. The content is not published immediately, being initially defined as a draft. To publish the content, use the option available in the right sidebar and set the status to "*published*". Additionally, it is possible to customize various content settings, such as:
 
 - Preventing the content from appearing in search results.
-- Scheduling the publication and unpublication of the content.
 - Modifying the content's URL.
 - Changing the author and publication date.
 
@@ -140,13 +137,9 @@ By default, when creating new content, a revision is automatically generated. Th
 
 <summary>Examples</summary>
 
-![Link to the news page via the Drupal CMS Dashboard](images/dashboard-news-page.jpg){width=60%}
+![Link to new article page](images/AI/7_2026_Drupal_Iberia_Braga.png){width=60%}
 
-![Link to add news in the listing](images/news-overview-new-content.jpg){width=60%}
-
-![Create new news as a draft](images/new-draft-news.jpg){width=60%}
-
-![Publish a news item](images/new-published-news.jpg){width=60%}
+![Create new news as a draft](images/AI/8_2026_Drupal_Iberia_Braga.png){width=60%}
 
 </details>
 
@@ -161,64 +154,19 @@ By default, when creating new content, a revision is automatically generated. Th
 
 <summary>Examples</summary>
 
-![Link to the option to translate the homepage.](images/translate-homepage-tab.jpg){width=60%}
+![Link to the option to translate the homepage.](images/AI/9_2026_Drupal_Iberia_Braga.png){width=60%}
 
 ![Link to add the translation in Portuguese](images/add-translation-operation.jpg){width=60%}
 
-![Translate the homepage.](images/create-translation.jpg){width=60%}
-
-</details>
-
-## Update the Website and Modules
-
-1.  **Activate the Diff Module**:
-    - Navigate to "*Extend*" and then "*List*".
-    - Activate the "Diff" module.
-    - This module is intentionally outdated to demonstrate how to perform an update.
-2.  **Update Outdated Modules**:
-    - Navigate to "*Extend*" and then "*Update extensions*".
-    - Update the "*Diff*" module (and other outdated modules).
-
-<details>
-
-<summary>Examples</summary>
-
-![Activate the diff module](images/enable-diff-module.jpg){width=60%}
-
-![Drupal CMS ready to update the diff module](images/update-ready.jpg){width=60%}
-
-</details>
-
-## Manage Content Revisions (Optional)
-
-1.  **Access the Content List**:
-    - Navigate to the "*Content*" section in the left sidebar.
-2.  **Edit and Create Revisions**:
-    - Edit an existing content and save the changes.
-    - View the available revisions in the "*Revisions*" tab.
-3.  **Restore Previous Revisions**:
-    - Explore the option to restore previous versions of the content.
-    - Use the "*Compare Revisions*" function to view the differences.
-
-<details>
-
-<summary>Examples</summary>
-
-![Complete list of content](images/content-overview-news.jpg){width=60%}
-
-![Link to access the content's revisions page](images/node-revisions-link.jpg){width=60%}
-
-![List of content revisions](images/node-revisions-list.jpg){width=60%}
-
-![Difference between revisions](images/revisions-diff.jpg){width=60%}
+![Translate the homepage.](images/AI/10_2026_Drupal_Iberia_Braga.png){width=60%}
 
 </details>
 
 ## Install AI Support Modules
 
 1.  **Activate the "*AI Assistant*" Recipe**:
-    - Navigate to "*Dashboard*"
-    - Select "_Choose recommended add-ons_".
+    - Navigate to "*Extend*"
+    - Select "*Recipes*".
     - Install the "*AI Assistant*" add-on.
     - Select the OpenAI provider and add the API key.
     - Ask the chatbot assistant: `What can you do ?`
@@ -254,11 +202,9 @@ By default, when creating new content, a revision is automatically generated. Th
 
 <summary>Examples</summary>
 
-![Start](images/AI/1_Start_AI.png){width=60%}
+![AI Recipe](images/AI/11_2026_Drupal_Iberia_Braga.png){width=60%}
 
-![Ai Recipe](images/AI/2_AI_Recipe.png){width=60%}
-
-![Config Provider](images/AI/3_Config_Provider.png){width=60%}
+![Config Provider](images/AI/12_2026_Drupal_Iberia_Braga.png){width=60%}
 
 ![Open Chatbot](images/AI/4_Open_ChatBot.png){width=60%}
 
